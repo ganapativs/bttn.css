@@ -1,0 +1,97 @@
+@import "../config/config.styl"
+
+body
+  border 0
+  padding 0
+  margin 0
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden !important;
+  color cWhite
+  background: cGrey; /* Old browsers */
+  background: -moz-linear-gradient(top,  cGrey 0%, cDarkGrey 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  cGrey 0%,cDarkGrey 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  cGrey 0%,cDarkGrey 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  font-family: 'Quicksand', sans-serif;
+  a
+    transition all 0.3s anim_func
+    text-decoration: none;
+    color: currentColor;
+  .bttn-logo-box
+    background cDarkGrey - 50%
+    .bttn-jelly
+      font-size 60px
+      padding: 4px 30px;
+      border-radius: 40px;
+      margin: 40px 10px 0 0;
+      font-weight fontBold
+    h4
+      font-weight fontBold
+      margin-bottom 40px
+  .fancy-box
+    margin: 20px;
+    .bttn-size
+      transition all 0.3s anim_func
+      color: currentColor;
+      font-size: 80%;
+      margin: 0 0 10px 0
+      font-family: 'courier';
+      opacity: 0.7;
+      font-weight: fontBold;
+    .fancy-box-buttons
+      padding: 0;
+      > .item
+        position relative
+        padding: 20px 0;
+        &:before
+          transition all 0.3s anim_func
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: currentColor;
+          left: 0;
+          top: 0;
+          opacity: 0.1;
+          z-index -1
+        &:nth-child(1)
+          &:before
+            opacity: 0.15;
+        &:nth-child(2)
+          &:before
+            opacity: 0.2;
+        &:nth-child(3)
+          &:before
+            opacity: 0.25;
+        &:nth-child(4)
+          &:before
+            opacity: 0.3;
+    .fancy-box-title
+      text-align left
+      padding: 20px 40px;
+      position: relative;
+      margin: 0 15px;
+      &:before
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        transition all 0.3s anim_func
+        background: currentColor;
+        left: 0;
+        top: 0;
+        opacity: 0.1;
+        z-index -1
+    .colors
+      float right
+      .color
+        transition all 0.3s anim_func
+        cursor pointer
+        width 30px
+        height 30px
+        float left
+        margin 0 10px
+        &:last-child
+          margin-right 0
+        &.active
+          transform scale(1.2)

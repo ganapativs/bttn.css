@@ -1,0 +1,50 @@
+@import "./config/config.styl"
+@import "./config/bttn-base.styl"
+
+.bttn-jelly
+  {bttnBaseStyle}
+  {bttnMdSize}
+  border: 1px solid currentColor
+  border-radius 50px;
+  color: currentColor;
+  overflow hidden
+  transition all 0.3s anim_func
+  &:before
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: currentColor;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index -1
+    border-radius 50px;
+    transform scale(0.8)
+    transition all 0.3s anim_func
+  &:hover, &:focus
+    outline none
+    border-color currentColor
+    box-shadow 0 1px 8px cBlack - rgba(0, 0, 0, .4)
+    transition all 0.5s anim_func
+    transform scale(1.1)
+    &:before
+      transform scale(1)
+      transition all 0.5s anim_func
+      opacity: 0.2
+  &.bttn-xs
+    {bttnXsSize}
+    &:hover, &:focus
+      box-shadow 0 1px 4px cBlack - rgba(0, 0, 0, .4)
+  &.bttn-sm
+    {bttnSmSize}
+    &:hover, &:focus
+      box-shadow 0 1px 6px cBlack - rgba(0, 0, 0, .4)
+  &.bttn-md
+    {bttnMdSize}
+    &:hover, &:focus
+      box-shadow 0 1px 8px cBlack - rgba(0, 0, 0, .4)
+  &.bttn-lg
+    {bttnLgSize}
+    &:hover, &:focus
+      box-shadow 0 1px 10px cBlack - rgba(0, 0, 0, .4)

@@ -1,0 +1,59 @@
+/* Base button config */
+bttnXsSize =
+  padding 3px 8px
+  font-size 12px;
+  font-family: inherit
+
+bttnSmSize =
+  padding 4px 10px
+  font-size 16px;
+  font-family: inherit
+
+bttnMdSize =
+  font-size 20px
+  font-family: inherit;
+  padding 5px 12px
+
+bttnLgSize =
+  padding 8px 15px
+  font-size 24px;
+  font-family: inherit
+
+bttnBaseStyle =
+  margin 0
+  padding 0
+  outline hidden
+  border-width 0
+  border-color transparent
+  background transparent
+  font-weight fontNormal
+  cursor pointer
+  position relative
+
+.bttn-default
+  color cWhite
+.bttn-primary
+  color cBlue
+.bttn-warning
+  color cYellow
+.bttn-danger
+  color cRedLight
+.bttn-success
+  color cGreen
+.bttn-royal
+  color cPurple
+.bttn
+  @extend .bttn-primary
+  {bttnBaseStyle}
+.bttn-lg
+  @extend .bttn
+  {bttnLgSize}
+.bttn-md
+  @extend .bttn
+  {bttnMdSize}
+.bttn-sm
+  @extend .bttn
+  {bttnSmSize}
+.bttn-xs
+  @extend .bttn
+  {bttnXsSize}

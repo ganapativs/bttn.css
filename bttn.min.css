@@ -1,0 +1,1 @@
+:-webkit-full-screen a{display:-webkit-box;display:flex;border-radius:5px}:-moz-full-screen a{display:flex;border-radius:5px}:-ms-fullscreen a{display:-ms-flexbox;display:flex;border-radius:5px}:fullscreen a{display:-webkit-box;display:-ms-flexbox;display:flex;border-radius:5px}
