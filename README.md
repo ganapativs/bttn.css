@@ -4,12 +4,10 @@ Awesome CSS buttons for your next web project
 Demo - https://ganapativs.github.io/bttn.css/
 
 ### Environment Setup
-**Install stylus and autoprefixer-stylus**
-<code>
+####Install stylus and autoprefixer-stylus**
 `npm install -g stylus`
 `npm install -g autoprefixer-stylus`
 `npm install -g clean-css`
-</code>
 
 **Compile stylus to css**
 <code>
