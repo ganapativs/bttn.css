@@ -97,6 +97,36 @@ body
       &:nth-child(4)
         &:before
           opacity: 0.3;
+      .code-copy
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        font-weight: fontBold;
+        font-size: 10px;
+        padding: 2px 4px;
+        border-radius: 2px;
+        cursor pointer
+        overflow hidden
+        opacity 0
+        transform rotate(0.001deg) translateY(6px)
+        transition all 0.3s anim_func
+        &:before
+          transition all 0.3s anim_func
+          position: absolute;
+          content: '';
+          width: 100%;
+          border-radius: 2px;
+          height: 100%;
+          background: currentColor;
+          left: 0;
+          top: 0;
+          opacity: 0.2;
+          z-index -1
+      &:hover
+        .code-copy
+          opacity 1
+          transition all 1s anim_func
+          transform rotate(0.001deg) translateY(0)
   .fancy-box-title
     text-align left
     padding: 20px 40px;
@@ -115,8 +145,8 @@ body
       z-index -1
   .colors
     float right
-    .color
-      transition all 0.3s anim_func
+    > .color
+      transition transform 0.15s ease-out
       cursor pointer
       width 20px
       height 20px
@@ -124,15 +154,65 @@ body
       margin 5px 10px
       border-radius: 50%;
       transform: scale(0.8);
+      &.active
+        border-radius 50% 2px 50% 50%
       &:last-child
         margin-right 0
-      &:not(.active)
-        &:hover
-          transform: scale(0.9);
-      &.active
-        transform scale(1)
-        border-radius 50% 2px 50% 50%
+    &:hover
+      > .color
+        &:not(.active)
+          &:hover
+            transform: scale(0.9);
+        &.active
+          transform scale(1)
+          border-radius 50% 2px 50% 50%
+          z-index: 1;
 
+
+@media screen and (min-width: 768px)
+  .colors
+    > .color
+      &.active
+        &:before
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: currentColor;
+          transition all 0.1s ease-in
+          transform: translateX(7.5px) translateY(-20px) rotate(45deg);
+          border-radius: 50% 50% 0 50%;
+      &:nth-child(1)
+        transform scale(0.8) translateX(215px)
+      &:nth-child(2)
+        transform scale(0.8) translateX(172px)
+      &:nth-child(3)
+        transform scale(0.8) translateX(129px)
+      &:nth-child(4)
+        transform scale(0.8) translateX(86px)
+      &:nth-child(5)
+        transform scale(0.8) translateX(43px)
+    &:hover
+      > .color
+        &:nth-child(1)
+          transform scale(0.8) translateX(0)
+        &:nth-child(2)
+          transform scale(0.8) translateX(0)
+        &:nth-child(3)
+          transform scale(0.8) translateX(0)
+        &:nth-child(4)
+          transform scale(0.8) translateX(0)
+        &:nth-child(5)
+          transform scale(0.8) translateX(0)
+        &:not(.active)
+          &:hover
+            transform: scale(0.9);
+        &.active
+          transform scale(1)
+          border-radius 50% 2px 50% 50%
+          z-index: 1;
+          &:before
+            transform: translateX(7.5px) translateY(-20px) rotate(45deg) scale(0);
 
 @media screen and (max-width: 767px)
   .fancy-box
@@ -141,3 +221,7 @@ body
       margin-top 10px
       display flex
       justify-content: center;
+      > .color
+        transform scale(0.8) translateX(0)
+        &.active
+          transform scale(1)

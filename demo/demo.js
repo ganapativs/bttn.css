@@ -21,4 +21,17 @@
         element.addClass(className);
         element.attr('data-activeclass', className);
     });
+
+    // Copy code
+    new Clipboard('.code-copy', {
+        text: function(trigger) {
+            var element = $(trigger).closest('.item');
+            var copyHTML = element.find('button')[0].outerHTML;
+            $(trigger).text('Copied');
+            setTimeout(function(){
+                $(trigger).text('Copy code');
+            }, 1000);
+            return copyHTML;
+        }
+    });
 })();
