@@ -157,10 +157,12 @@
   background: rgba(255,255,255,0.4);
   color: #fff;
   overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .bttn-simple:hover,
 .bttn-simple:focus {
   opacity: 0.9;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .bttn-simple.bttn-xs {
   padding: 3px 8px;
