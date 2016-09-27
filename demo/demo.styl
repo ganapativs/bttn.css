@@ -93,10 +93,15 @@ body
       height 30px
       float left
       margin 0 10px
+      border-radius: 50%;
+      transform: scale(0.8);
       &:last-child
         margin-right 0
+      &:not(.active)
+        &:hover
+          transform: scale(0.9);
       &.active
-        transform scale(1.1)
+        transform scale(1)
         border-radius 50% 2px 50% 50%
 
 

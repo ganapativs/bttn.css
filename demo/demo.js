@@ -11,6 +11,11 @@
         $(element).find('.color').removeClass('active');
         $(this).addClass('active');
 
+        if($(this).attr('data-add-button-color-class')) {
+            element.find('button').removeClass(element.attr('data-activeclass'));
+            element.find('button').addClass(className);
+        }
+
         if(element.attr('data-activeclass'))
             element.removeClass(element.attr('data-activeclass'));
         element.addClass(className);
