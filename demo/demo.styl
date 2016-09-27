@@ -8,27 +8,56 @@ body
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden !important;
   color cWhite
-  background: cGrey; /* Old browsers */
-  background: -moz-linear-gradient(top,  cGrey 0%, cDarkGrey 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  cGrey 0%,cDarkGrey 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  cGrey 0%,cDarkGrey 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: cDarkBlue;
   font-family: 'Quicksand', sans-serif;
   a
-    transition all 0.3s anim_func
     text-decoration: none;
     color: currentColor;
 
 .bttn-logo-box
-  background cDarkGrey - 50%
+  background: cGreen; /* Old browsers */
+  background: -moz-linear-gradient(top,  cGreen 0%, cGreen - rgba(0, 0, 0, .4) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  cGreen 0%,cGreen - rgba(0, 0, 0, .4) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  cGreen 0%,cGreen - rgba(0, 0, 0, .4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  position: fixed;
+  height: 360px;
+  width: calc(100% + 20px);
+  left: 0;
+  top: 0;
+  z-index: -3;
   .bttn-jelly
     font-size 60px
     padding: 4px 30px;
     border-radius: 40px;
-    margin: 40px 10px 0 0;
+    margin: 50px 10px 0 0;
     font-weight fontBold
   h4
     font-weight fontBold
-    margin-bottom 40px
+    margin-bottom 45px
+  .download-options
+    .download-bttn
+      button
+        margin 0 10px
+        font-weight fontBold
+  .author
+    margin-bottom 50px
+    padding-top: 20px;
+    button
+      padding 4px
+
+.fancy-box-wrapper
+  margin-top: 360px;
+  padding-top: 1px;
+  position relative
+  &:before
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: cDarkBlue;
+    z-index: -2;
 
 .fancy-box
   margin: 20px;
