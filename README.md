@@ -19,9 +19,9 @@ Demo - https://ganapativs.github.io/bttn.css/
 #### Usage
 Include 'bttn.min.css' in head of your html file and start using class in your button.
 <pre>
-  &lt;button class="bttn-material-circle bttn-md"&gt;
-      &lt;i class="icon-menu"&gt;&lt;/i&gt;
-  &lt;/button&gt;
+&lt;button class="bttn-material-circle bttn-md"&gt;
+  &lt;i class="icon-menu"&gt;&lt;/i&gt;
+&lt;/button&gt;
 </pre>
 
 
