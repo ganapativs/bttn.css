@@ -3,6 +3,22 @@
  */
 
 ;(function() {
+    // Smooth scroll - hash
+    $("a[href*='#']:not([href='#'])").click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                var offset = target.offset();
+                if (offset && offset.top)
+                    $('html,body').animate({
+                        scrollTop: offset.top
+                    }, 400);
+                return false;
+            }
+        }
+    });
+
     // Color change for button block
     $(document).on('click', '.fancy-box .colors .color', function() {
         var element = $(this).closest('.fancy-box');
