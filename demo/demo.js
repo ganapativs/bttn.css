@@ -51,6 +51,7 @@
         }
     });
 
+    // Header logo box parallax
     var parallaxThreshold = 360;
     $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
@@ -59,6 +60,17 @@
                 transform: 'translate3d(0, 0, 0) translateY(' + (-scrollTop * 0.4) + 'px)',
                 opacity: 1 - (scrollTop / parallaxThreshold)
             });
+            $('.go-top').removeClass('active');
         }
+        else {
+            $('.go-top').addClass('active');
+        }
+    });
+
+    // Go to top
+    $('.go-top').click(function() {
+        $('html,body').animate({
+            scrollTop: 0
+        }, 400);
     });
 })();

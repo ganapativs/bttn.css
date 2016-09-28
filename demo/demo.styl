@@ -45,6 +45,18 @@ body
     button
       padding 4px
 
+.go-top
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index 100
+  transform scale(0.8)
+  opacity 0
+  transition all 0.3s anim_func
+  &.active
+    transform scale(1)
+    opacity 1
+
 .fancy-box-wrapper
   margin-top: 360px;
   padding-top: 1px;
@@ -216,6 +228,8 @@ body
             transform: translateX(7.5px) translateY(-20px) rotate(45deg) scale(0);
 
 @media screen and (max-width: 767px)
+  .hidden-xs
+    display none !important
   .fancy-box
     .code-copy
       display none
