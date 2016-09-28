@@ -34,4 +34,15 @@
             return copyHTML;
         }
     });
+
+    var parallaxThreshold = 360;
+    $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop();
+        if(scrollTop < parallaxThreshold) {
+            $('.bttn-logo-box').css({
+                transform: 'translate3d(0, 0, 0) translateY(' + (-scrollTop * 0.4) + 'px)',
+                opacity: 1 - (scrollTop / parallaxThreshold)
+            });
+        }
+    });
 })();
