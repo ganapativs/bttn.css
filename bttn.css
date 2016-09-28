@@ -347,7 +347,7 @@
   padding: 5px 12px;
   width: 44px;
   height: 44px;
-  line-height: 36px;
+  line-height: 38px;
 }
 .bttn-material-circle.bttn-lg {
   padding: 8px 15px;
@@ -355,7 +355,7 @@
   font-family: inherit;
   width: 54px;
   height: 54px;
-  line-height: 42px;
+  line-height: 44px;
 }
 .bttn-material-circle.bttn-default {
   background: #fff;
@@ -425,13 +425,13 @@
   font-size: 20px;
   font-family: inherit;
   padding: 5px 12px;
-  line-height: 34px;
+  line-height: 36px;
 }
 .bttn-material-flat.bttn-lg {
   padding: 8px 15px;
   font-size: 24px;
   font-family: inherit;
-  line-height: 38px;
+  line-height: 40px;
 }
 .bttn-material-flat.bttn-default {
   background: #fff;
