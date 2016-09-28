@@ -413,25 +413,21 @@
   padding: 3px 8px;
   font-size: 12px;
   font-family: inherit;
-  line-height: 22px;
 }
 .bttn-material-flat.bttn-sm {
   padding: 4px 10px;
   font-size: 16px;
   font-family: inherit;
-  line-height: 28px;
 }
 .bttn-material-flat.bttn-md {
   font-size: 20px;
   font-family: inherit;
   padding: 5px 12px;
-  line-height: 36px;
 }
 .bttn-material-flat.bttn-lg {
   padding: 8px 15px;
   font-size: 24px;
   font-family: inherit;
-  line-height: 40px;
 }
 .bttn-material-flat.bttn-default {
   background: #fff;
