@@ -33,6 +33,67 @@
   &.bttn-royal
     background cPurple
 
+.bttn-minimal
+  {bttnBaseStyle}
+  {bttnMdSize}
+  border-width: 0
+  border-radius 4px;
+  background transparent
+  color: cWhite
+  overflow hidden
+  transition all 0.3s anim_func
+  &:after
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 7px;
+    width: calc(100% - 14px);
+    height: 1px;
+    opacity 0.65
+    background: currentColor;
+    transition transform 0.3s anim_func, opacity 0.3s anim_func
+  &:before
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 7px;
+    width: calc(100% - 14px);
+    height: 1px;
+    opacity 0.65
+    background: currentColor;
+    transition transform 0.3s anim_func, opacity 0.3s anim_func
+  &:hover, &:focus
+    opacity 0.9
+    transition all 0.5s anim_func
+    &:after
+      opacity 1
+      transform translateX(-7px) rotate(0.001deg)
+      transition transform 0.5s anim_func, opacity 0.5s anim_func
+    &:before
+      opacity 1
+      transform translateX(7px) rotate(0.001deg)
+      transition transform 0.5s anim_func, opacity 0.5s anim_func
+  &.bttn-xs
+    {bttnXsSize}
+  &.bttn-sm
+    {bttnSmSize}
+  &.bttn-md
+    {bttnMdSize}
+  &.bttn-lg
+    {bttnLgSize}
+  &.bttn-default
+    color cWhite
+  &.bttn-primary
+    color cBlue
+  &.bttn-warning
+    color cYellow
+  &.bttn-danger
+    color cRedLight
+  &.bttn-success
+    color cGreen
+  &.bttn-royal
+    color cPurple
+
 .bttn-jelly
   {bttnBaseStyle}
   {bttnMdSize}
@@ -101,9 +162,10 @@
 .bttn-fill
   {bttnBaseStyle}
   {bttnMdSize}
-  border: 1px solid currentColor
+  background cWhite
+  color cBlue
   border-radius 2px;
-  color: currentColor;
+  z-index: 0;
   overflow hidden
   transition all 0.3s anim_func
   &:before
@@ -111,20 +173,23 @@
     content: '';
     width: 0;
     height: 100%;
-    background: currentColor;
+    border-radius 2px;
+    overflow hidden
+    background: cBlue;
     left: 50%;
     bottom: 0;
     opacity: 0;
     z-index -1
     transition all 0.3s anim_func
   &:hover, &:focus
+    color cWhite
     outline none
     border-color currentColor
     box-shadow 0 1px 8px cBlack - rgba(0, 0, 0, .2)
     transition all 0.5s anim_func
     &:before
       left: 0;
-      opacity: 0.4
+      opacity: 1
       width 100%
       transition all 0.5s anim_func
   &.bttn-xs
@@ -143,67 +208,46 @@
     {bttnLgSize}
     &:hover, &:focus
       box-shadow 0 1px 10px cBlack - rgba(0, 0, 0, .2)
-
-.bttn-minimal
-  {bttnBaseStyle}
-  {bttnMdSize}
-  border-width: 0
-  border-radius 4px;
-  background transparent
-  color: cWhite
-  overflow hidden
-  transition all 0.3s anim_func
-  &:after
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 7px;
-    width: calc(100% - 14px);
-    height: 1px;
-    opacity 0.65
-    background: currentColor;
-    transition transform 0.3s anim_func, opacity 0.3s anim_func
-  &:before
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 7px;
-    width: calc(100% - 14px);
-    height: 1px;
-    opacity 0.65
-    background: currentColor;
-    transition transform 0.3s anim_func, opacity 0.3s anim_func
-  &:hover, &:focus
-    opacity 0.9
-    transition all 0.5s anim_func
-    &:after
-      opacity 1
-      transform translateX(-7px) rotate(0.001deg)
-      transition transform 0.5s anim_func, opacity 0.5s anim_func
-    &:before
-      opacity 1
-      transform translateX(7px) rotate(0.001deg)
-      transition transform 0.5s anim_func, opacity 0.5s anim_func
-  &.bttn-xs
-    {bttnXsSize}
-  &.bttn-sm
-    {bttnSmSize}
-  &.bttn-md
-    {bttnMdSize}
-  &.bttn-lg
-    {bttnLgSize}
   &.bttn-default
-    color cWhite
-  &.bttn-primary
+    background cWhite
     color cBlue
+    &:before
+      background: cBlue;
+  &.bttn-primary
+    background cBlue
+    color cWhite
+    &:hover, &:focus
+      color cBlue
+    &:before
+      background: cWhite;
   &.bttn-warning
-    color cYellow
+    background cYellow
+    color cWhite
+    &:hover, &:focus
+      color cYellow
+    &:before
+      background: cWhite;
   &.bttn-danger
-    color cRedLight
+    background cRedLight
+    color cWhite
+    &:hover, &:focus
+      color cRedLight
+    &:before
+      background: cWhite;
   &.bttn-success
-    color cGreen
+    background cGreen
+    color cWhite
+    &:hover, &:focus
+      color cGreen
+    &:before
+      background: cWhite;
   &.bttn-royal
-    color cPurple
+    background cPurple
+    color cWhite
+    &:hover, &:focus
+      color cPurple
+    &:before
+      background: cWhite;
 
 .bttn-material-circle
   {bttnBaseStyle}
