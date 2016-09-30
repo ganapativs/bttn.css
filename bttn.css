@@ -215,6 +215,102 @@
 .bttn-minimal.bttn-royal {
   color: #bd2df5;
 }
+.bttn-stretch {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border-width: 0;
+  border-color: transparent;
+  background: transparent;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  font-family: inherit;
+  padding: 5px 12px;
+  border-width: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+  letter-spacing: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.bttn-stretch:after,
+.bttn-stretch:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  opacity: 0.65;
+  background: currentColor;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.bttn-stretch:after {
+  top: 0;
+}
+.bttn-stretch:before {
+  bottom: 0;
+}
+.bttn-stretch:hover,
+.bttn-stretch:focus {
+  letter-spacing: 2px;
+  opacity: 0.9;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.bttn-stretch:hover:after,
+.bttn-stretch:focus:after {
+  opacity: 1;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.bttn-stretch:hover:before,
+.bttn-stretch:focus:before {
+  opacity: 1;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.bttn-stretch.bttn-xs {
+  padding: 3px 8px;
+  font-size: 12px;
+  font-family: inherit;
+}
+.bttn-stretch.bttn-sm {
+  padding: 4px 10px;
+  font-size: 16px;
+  font-family: inherit;
+}
+.bttn-stretch.bttn-md {
+  font-size: 20px;
+  font-family: inherit;
+  padding: 5px 12px;
+}
+.bttn-stretch.bttn-lg {
+  padding: 8px 15px;
+  font-size: 24px;
+  font-family: inherit;
+}
+.bttn-stretch.bttn-default {
+  color: #fff;
+}
+.bttn-stretch.bttn-primary {
+  color: #1d89ff;
+}
+.bttn-stretch.bttn-warning {
+  color: #ffb85f;
+}
+.bttn-stretch.bttn-danger {
+  color: #ff5964;
+}
+.bttn-stretch.bttn-success {
+  color: #28b78d;
+}
+.bttn-stretch.bttn-royal {
+  color: #bd2df5;
+}
 .bttn-jelly {
   margin: 0;
   padding: 0;
@@ -336,17 +432,19 @@
   padding: 5px 12px;
   background: #fff;
   color: #1d89ff;
-  border-radius: 2px;
+  border-radius: 1px;
   z-index: 0;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .bttn-fill:before {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
   position: absolute;
   content: '';
   width: 0;
   height: 100%;
-  border-radius: 2px;
+  border-radius: 1px;
   overflow: hidden;
   background: #1d89ff;
   left: 50%;

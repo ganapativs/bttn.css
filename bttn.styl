@@ -94,6 +94,64 @@
   &.bttn-royal
     color cPurple
 
+.bttn-stretch
+  {bttnBaseStyle}
+  {bttnMdSize}
+  border-width: 0
+  border-radius 0;
+  background transparent
+  color: cWhite
+  letter-spacing: 0;
+  overflow hidden
+  transition all 0.3s anim_func
+  &:after, &:before
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    opacity 0.65
+    background: currentColor;
+    transition all 0.3s anim_func
+  &:after
+    top: 0;
+  &:before
+    bottom: 0;
+  &:hover, &:focus
+    letter-spacing: 2px;
+    opacity 0.9
+    transition all 0.5s anim_func
+    &:after
+      opacity 1
+      left: 0;
+      width: 100%;
+      transition all 0.5s anim_func
+    &:before
+      opacity 1
+      left: 0;
+      width: 100%;
+      transition all 0.5s anim_func
+  &.bttn-xs
+    {bttnXsSize}
+  &.bttn-sm
+    {bttnSmSize}
+  &.bttn-md
+    {bttnMdSize}
+  &.bttn-lg
+    {bttnLgSize}
+  &.bttn-default
+    color cWhite
+  &.bttn-primary
+    color cBlue
+  &.bttn-warning
+    color cYellow
+  &.bttn-danger
+    color cRedLight
+  &.bttn-success
+    color cGreen
+  &.bttn-royal
+    color cPurple
+
 .bttn-jelly
   {bttnBaseStyle}
   {bttnMdSize}
@@ -164,16 +222,18 @@
   {bttnMdSize}
   background cWhite
   color cBlue
-  border-radius 2px;
+  border-radius 1px;
   z-index: 0;
   overflow hidden
   transition all 0.3s anim_func
   &:before
+    transform translate3d(0,0,0)
+    backface-visibility hidden
     position: absolute;
     content: '';
     width: 0;
     height: 100%;
-    border-radius 2px;
+    border-radius 1px;
     overflow hidden
     background: cBlue;
     left: 50%;
