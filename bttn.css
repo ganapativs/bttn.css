@@ -154,7 +154,7 @@
 .bttn-jelly:hover,
 .bttn-jelly:focus {
   outline: none;
-  box-shadow: 0 1px 8px rgba(58,51,53,0.6);
+  box-shadow: 0 1px 8px rgba(58,51,53,0.4);
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transform: scale(1.1);
 }
@@ -171,7 +171,7 @@
 }
 .bttn-jelly.bttn-xs:hover,
 .bttn-jelly.bttn-xs:focus {
-  box-shadow: 0 1px 4px rgba(58,51,53,0.6);
+  box-shadow: 0 1px 4px rgba(58,51,53,0.4);
 }
 .bttn-jelly.bttn-sm {
   padding: 4px 10px;
@@ -180,7 +180,7 @@
 }
 .bttn-jelly.bttn-sm:hover,
 .bttn-jelly.bttn-sm:focus {
-  box-shadow: 0 1px 6px rgba(58,51,53,0.6);
+  box-shadow: 0 1px 6px rgba(58,51,53,0.4);
 }
 .bttn-jelly.bttn-md {
   font-size: 20px;
@@ -189,7 +189,7 @@
 }
 .bttn-jelly.bttn-md:hover,
 .bttn-jelly.bttn-md:focus {
-  box-shadow: 0 1px 8px rgba(58,51,53,0.6);
+  box-shadow: 0 1px 8px rgba(58,51,53,0.4);
 }
 .bttn-jelly.bttn-lg {
   padding: 8px 15px;
@@ -198,7 +198,7 @@
 }
 .bttn-jelly.bttn-lg:hover,
 .bttn-jelly.bttn-lg:focus {
-  box-shadow: 0 1px 10px rgba(58,51,53,0.6);
+  box-shadow: 0 1px 10px rgba(58,51,53,0.4);
 }
 .bttn-jelly.bttn-default {
   background: #fff;
