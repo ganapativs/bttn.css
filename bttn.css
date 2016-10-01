@@ -432,32 +432,27 @@
   padding: 5px 12px;
   background: #fff;
   color: #1d89ff;
-  border-radius: 1px;
+  border: none;
   z-index: 0;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .bttn-fill:before {
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
   position: absolute;
   content: '';
   width: 0;
   height: 100%;
-  border-radius: 1px;
-  overflow: hidden;
   background: #1d89ff;
   left: 50%;
   bottom: 0;
   opacity: 0;
   z-index: -1;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: left 0.15s ease-out, opacity 0.15s ease-out, width 0.15s ease-out;
 }
 .bttn-fill:hover,
 .bttn-fill:focus {
   color: #fff;
   outline: none;
-  border-color: currentColor;
   box-shadow: 0 1px 8px rgba(58,51,53,0.8);
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -466,7 +461,7 @@
   left: 0;
   opacity: 1;
   width: 100%;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: left 0.2s ease-in, opacity 0.2s ease-in, width 0.2s ease-in;
 }
 .bttn-fill.bttn-xs {
   padding: 3px 8px;
