@@ -15,12 +15,9 @@ body
     color: currentColor;
 
 .bttn-logo-box
-  background: cGreen; /* Old browsers */
-  background: -moz-linear-gradient(top,  cGreen 0%, cGreen - rgba(0, 0, 0, .4) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  cGreen 0%,cGreen - rgba(0, 0, 0, .4) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  cGreen 0%,cGreen - rgba(0, 0, 0, .4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: #272440;
   position: fixed;
-  height: 360px;
+  height: 380px;
   width: calc(100% + 20px);
   left: 0;
   top: 0;
@@ -29,20 +26,46 @@ body
     font-size 60px
     padding: 4px 30px;
     border-radius: 40px;
-    margin: 50px 10px 0 0;
+    margin: 80px 10px 0 0;
     font-weight fontBold
+    box-shadow none
+    background-image: -webkit-linear-gradient(100deg, cOrange, cYellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:hover, &:focus
+      transform translateY(-10px)
+      box-shadow:  10px 4px #1d89ff,
+              10px 4px 2px rgba(0, 0, 0, 0.3), 20px -4px #feab3a,
+              20px -4px 2px rgba(0, 0, 0, 0.3),30px 8px #ff5964,
+              30px 8px 2px rgba(0, 0, 0, 0.3),-10px -8px #28b78d,
+              -10px -8px 2px rgba(0, 0, 0, 0.3),-20px 8px #bd2df5, -20px 8px 2px rgba(0, 0, 0, 0.3)
+      &:before
+        background cWhite
+      + h4
+        margin-top: 30px !important;
   h4
     font-weight fontBold
-    margin-bottom 45px
+    margin-bottom: 35px;
+    margin-top: 0;
+    transition margin-top 0.3s ease
+    color cOrange
+    background-image: -webkit-linear-gradient(92deg, cOrange, cYellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   .download-options
     .download-bttn
       button
-        margin 0 10px
         font-weight fontBold
   .author
-    margin-bottom 50px
+    margin-bottom 70px
     padding-top: 20px;
+    background-image: -webkit-linear-gradient(92deg, cOrange, cYellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     button
+      background-image: -webkit-linear-gradient(92deg, cOrange, cYellow);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       padding 4px
 
 .go-top
@@ -58,7 +81,7 @@ body
     opacity 1
 
 .fancy-box-wrapper
-  margin-top: 360px;
+  margin-top: 380px;
   padding-top: 1px;
   position relative
   &:before
@@ -181,7 +204,6 @@ body
           border-radius 50% 2px 50% 50%
           z-index: 1;
 
-
 @media screen and (min-width: 768px)
   .colors
     > .color
@@ -228,10 +250,16 @@ body
             transform: translateX(7.5px) translateY(-20px) rotate(45deg) scale(0);
 
 @media screen and (max-width: 767px)
+  .bttn-logo-box
+    .bttn-jelly
+      margin-top 55px
+
   .hidden-xs
     display none !important
+
   .fancy-box-wrapper
     padding 1px 15px
+
   .fancy-box
     .code-copy
       display none
