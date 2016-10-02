@@ -3,12 +3,15 @@ Awesome CSS buttons for your next web project
 
 Demo - https://ganapativs.github.io/bttn.css/
 
-#### Button classes
+#### Button style classes
 - bttn-jelly
 - bttn-simple
 - bttn-minimal
 - bttn-material-circle
 - bttn-material-flat
+
+#### Button helper classes
+- bttn-block
 
 #### Button sizes
 - bttn-xs
@@ -35,12 +38,12 @@ npm install -g clean-css
 
 ####Compile stylus to css
 <pre>
-stylus -w bttn.styl -o bttn.css
+stylus -w  -u autoprefixer-stylus bttn.styl -o bttn.css
 </pre>
 
 ####Autoprefix & Minify css for production
 <pre>
-stylus -u autoprefixer-stylus -c bttn.styl -o bttn.css
+stylus -u autoprefixer-stylus bttn.styl -o bttn.css
 cleancss -o bttn.min.css bttn.css
 </pre>
 
@@ -49,3 +52,7 @@ cleancss -o bttn.min.css bttn.css
 stylus -u autoprefixer-stylus -c demo/demo.styl -o demo/demo.css
 open demo/index.html in browser
 </pre>
+
+##TODO
+- Add loading & done state animations
+- Test on older version of the browsers

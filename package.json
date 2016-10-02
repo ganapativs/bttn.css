@@ -1,0 +1,26 @@
+{
+  "name": "bttn.css",
+  "version": "0.1.0",
+  "description": "Awesome CSS buttons for your next web project",
+  "main": "bttn.min.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganapativs/bttn.css.git"
+  },
+  "keywords": [
+    "Button",
+    "CSS",
+    "Project",
+    "Transition",
+    "Animation"
+  ],
+  "author": "Ganapati V S (@ganapativs)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ganapativs/bttn.css/issues"
+  },
+  "homepage": "https://github.com/ganapativs/bttn.css#readme"
+}
