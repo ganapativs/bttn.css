@@ -1,10 +1,14 @@
 {
   "name": "bttn.css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Awesome CSS buttons for your next web project",
   "main": "bttn.min.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npm install -g stylus && npm install -g autoprefixer-stylus && npm install -g clean-css",
+    "start": "stylus -w  -u autoprefixer-stylus bttn.styl -o bttn.css",
+    "build": "stylus -u autoprefixer-stylus bttn.styl -o bttn.css && cleancss -o bttn.min.css bttn.css",
+    "demo": "stylus -u autoprefixer-stylus -c demo/demo.styl -o demo/demo.css"
   },
   "repository": {
     "type": "git",

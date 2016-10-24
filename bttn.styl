@@ -3,7 +3,7 @@
 /*!!
  *
  * bttn.css - https://ganapativs.github.io/bttn.css
- * Version - 0.1.0
+ * Version - 0.1.1
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
  * Copyright (c) 2016 Ganapati V S(@ganapativs)
@@ -49,6 +49,56 @@
   &.bttn-royal
     background cPurple
 
+.bttn-bordered
+  {bttnBaseStyle}
+  {bttnMdSize}
+  border: 1px solid cWhite - rgba(0, 0, 0, .6)
+  border-radius 4px;
+  background transparent
+  color: cWhite
+  overflow hidden
+  transition all 0.3s anim_func
+  &:hover, &:focus
+    border-color cWhite - rgba(0, 0, 0, .3)
+  &.bttn-xs
+    {bttnXsSize}
+  &.bttn-sm
+    {bttnSmSize}
+  &.bttn-md
+    {bttnMdSize}
+  &.bttn-lg
+    {bttnLgSize}
+  &.bttn-default
+    border-color cWhite - rgba(0, 0, 0, .6)
+    color: cWhite
+    &:hover, &:focus
+      border-color cWhite - rgba(0, 0, 0, .3)
+  &.bttn-primary
+    border-color cBlue - rgba(0, 0, 0, .6)
+    color cBlue
+    &:hover, &:focus
+      border-color cBlue - rgba(0, 0, 0, .3)
+  &.bttn-warning
+    border-color cYellow - rgba(0, 0, 0, .6)
+    color cYellow
+    &:hover, &:focus
+      border-color cYellow - rgba(0, 0, 0, .3)
+  &.bttn-danger
+    border-color cRedLight - rgba(0, 0, 0, .6)
+    color cRedLight
+    &:hover, &:focus
+      border-color cRedLight - rgba(0, 0, 0, .3)
+  &.bttn-success
+    border-color cGreen - rgba(0, 0, 0, .6)
+    color cGreen
+    &:hover, &:focus
+      border-color cGreen - rgba(0, 0, 0, .3)
+  &.bttn-royal
+    border-color cPurple - rgba(0, 0, 0, .6)
+    color cPurple
+    &:hover, &:focus
+      border-color cPurple - rgba(0, 0, 0, .3)
+
 .bttn-gradient
   @extend .bttn-simple
   color cBlue
@@ -66,7 +116,7 @@
   background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #d6e3ff 100%);
   background-image: linear-gradient(to bottom, #FFFFFF 0%, #d6e3ff 100%);
   background-image: -webkit-linear-gradient(93deg, #d6e3ff 0%, #FFFFFF 100%);
-  text-shadow: 0 0.5px cBlack;
+  text-shadow 0 1px 0 rgba(255, 255, 255, .25)
   &.bttn-default
     color cBlue
     background-image: -webkit-gradient(
@@ -160,38 +210,35 @@
   background transparent
   color: cWhite
   overflow hidden
-  transition all 0.3s anim_func
+  transition all 0.5s anim_func
   &:after
     content: '';
     position: absolute;
     bottom: 0;
-    left: 7px;
-    width: calc(100% - 14px);
+    left: 10px;
+    width: calc(100% - 20px);
     height: 1px;
     opacity 0.65
     background: currentColor;
-    transition transform 0.3s anim_func, opacity 0.3s anim_func
+    transition transform 0.5s anim_func, opacity 0.5s anim_func
   &:before
     content: '';
     position: absolute;
     bottom: 0;
-    left: 7px;
-    width: calc(100% - 14px);
+    left: 10px;
+    width: calc(100% - 20px);
     height: 1px;
     opacity 0.65
     background: currentColor;
-    transition transform 0.3s anim_func, opacity 0.3s anim_func
+    transition transform 0.5s anim_func, opacity 0.5s anim_func
   &:hover, &:focus
     opacity 0.9
-    transition all 0.5s anim_func
     &:after
       opacity 1
-      transform translateX(-7px) rotate(0.001deg)
-      transition transform 0.5s anim_func, opacity 0.5s anim_func
+      transform translateX(-10px) rotate(0.001deg)
     &:before
       opacity 1
-      transform translateX(7px) rotate(0.001deg)
-      transition transform 0.5s anim_func, opacity 0.5s anim_func
+      transform translateX(10px) rotate(0.001deg)
   &.bttn-xs
     {bttnXsSize}
   &.bttn-sm

@@ -4,9 +4,13 @@ Awesome CSS buttons for your next web project
 Demo - https://ganapativs.github.io/bttn.css/
 
 #### Button style classes
-- bttn-jelly
 - bttn-simple
+- bttn-bordered
 - bttn-minimal
+- bttn-stretch
+- bttn-jelly
+- bttn-gradient
+- bttn-fill
 - bttn-material-circle
 - bttn-material-flat
 
@@ -29,27 +33,24 @@ Include 'bttn.min.css' in head of your html file and start using class in your b
 
 
 ### Environment Setup
-####Install stylus and autoprefixer-stylus
+####Install dependencies - stylus, autoprefixer-stylus and clean-css
 <pre>
-npm install -g stylus
-npm install -g autoprefixer-stylus
-npm install -g clean-css
+npm install
 </pre>
 
 ####Compile stylus to css
 <pre>
-stylus -w  -u autoprefixer-stylus bttn.styl -o bttn.css
+npm start
 </pre>
 
 ####Autoprefix & Minify css for production
 <pre>
-stylus -u autoprefixer-stylus bttn.styl -o bttn.css
-cleancss -o bttn.min.css bttn.css
+npm run build
 </pre>
 
 ####View bttn.css demo in browser
 <pre>
-stylus -u autoprefixer-stylus -c demo/demo.styl -o demo/demo.css
+npm run demo
 open demo/index.html in browser
 </pre>
 
