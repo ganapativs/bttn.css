@@ -4,15 +4,15 @@ Simple buttons for your next awesome project!
 Demo - https://bttn.surge.sh/
 
 #### Button style classes
-- bttn-simple
-- bttn-bordered
-- bttn-minimal
-- bttn-stretch
-- bttn-jelly
-- bttn-gradient
-- bttn-fill
-- bttn-material-circle
-- bttn-material-flat
+- `bttn-simple`
+- `bttn-bordered`
+- `bttn-minimal`
+- `bttn-stretch`
+- `bttn-jelly`
+- `bttn-gradient`
+- `bttn-fill`
+- `bttn-material-circle`
+- `bttn-material-flat`
 
 #### Button helper classes
 - bttn-block
