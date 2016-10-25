@@ -3,7 +3,7 @@ Simple buttons for your next awesome project!
 
 ##Demo - https://bttn.surge.sh/
 
-<img src="http://imgur.com/a/elyes" width="600" />
+<img src="http://imgur.com/8oQvKXN" width="600" />
 
 #### Button style classes
 - `bttn-simple`
