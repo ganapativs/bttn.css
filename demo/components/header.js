@@ -57,7 +57,7 @@ export default class Header extends Component {
                         <div class="row col-xs-12 col-sm-8 col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3
                                     col-sm-offset-2 around-xs author animated fadeInUp">
                             <div class="col-xs-12 download-bttn center-xs">
-                                v0.1.1 • with ❤
+                                v0.1.2 • with ❤
                                 <a href="https://twitter.com/ganapativs" target="_blank">
                                     <button class="bttn-simple bttn-sm">
                                         @ganapativs

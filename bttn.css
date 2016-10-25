@@ -2,7 +2,7 @@
 /*!
  *
  * bttn.css - https://ganapativs.github.io/bttn.css
- * Version - 0.1.1
+ * Version - 0.1.2
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
  * Copyright (c) 2016 Ganapati V S(@ganapativs)
@@ -704,6 +704,10 @@
 .bttn-fill.bttn-default {
   background: #fff;
   color: #1d89ff;
+}
+.bttn-fill.bttn-default:hover,
+.bttn-fill.bttn-default:focus {
+  color: #fff;
 }
 .bttn-fill.bttn-default:before {
   background: #1d89ff;
