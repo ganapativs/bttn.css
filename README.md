@@ -33,7 +33,10 @@ Include 'bttn.min.css' in head of your html file and start using class in your b
 
 
 ### Environment Setup
+
 > :information_source: Build process uses [yarn](https://yarnpkg.com), you can also use npm instead.
+
+
 ####Install dependencies - stylus, autoprefixer-stylus and clean-css
 <pre>
 yarn
