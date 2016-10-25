@@ -1,7 +1,7 @@
 # bttn.css
 Awesome CSS buttons for your next web project
 
-Demo - https://ganapativs.github.io/bttn.css/
+Demo - https://bttn.surge.sh/
 
 #### Button style classes
 - bttn-simple
@@ -33,25 +33,25 @@ Include 'bttn.min.css' in head of your html file and start using class in your b
 
 
 ### Environment Setup
+> :information_source: Build process uses [yarn](https://yarnpkg.com), you can use npm instead of yarn.
 ####Install dependencies - stylus, autoprefixer-stylus and clean-css
 <pre>
-npm install
+yarn
 </pre>
 
 ####Compile stylus to css
 <pre>
-npm start
+yarn start
 </pre>
 
-####Autoprefix & Minify css for production
+####Minify css for production and build example folder javascript files(Webpack)
 <pre>
-npm run build
+yarn run build
 </pre>
 
 ####View bttn.css demo in browser
 <pre>
-npm run demo
-open demo/index.html in browser
+open build/index.html in browser
 </pre>
 
 ##TODO

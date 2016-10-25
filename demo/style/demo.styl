@@ -1,0 +1,329 @@
+@import "../../config/config.styl"
+
+body
+  border 0
+  padding 0
+  margin 0
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden !important;
+  color cDarkBlue
+  background: cWhite;
+  font-family: 'Quicksand', sans-serif;
+  opacity 0
+  transition opacity 0.3s anim_func
+  a
+    text-decoration: none;
+    color: currentColor;
+
+
+.footer
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 -1px 200px rgba(0,0,0,0.08)
+  a
+    padding 0 10px
+    color: cDarkGrey;
+    text-decoration: none;
+    opacity 0.7
+    transition opacity 0.2s ease-in
+    &:hover
+      opacity 1
+    button
+      color: cDarkGrey;
+
+@media screen and (max-width: 767px)
+  .hidden-xs
+    display none !important
+
+.bttn-logo-box
+  background: #FFFDE7;
+  position: fixed;
+  height: 380px;
+  width: calc(100% + 20px);
+  left: 0;
+  top: 0;
+  z-index: -3;
+  .animated
+    animation-delay 0.35s
+  .bttn-jelly
+    font-size 60px
+    padding: 4px 30px;
+    border-radius: 40px;
+    margin: 70px 10px 40px 0;
+    font-weight fontBold
+    box-shadow none
+    background: transparent;
+    color: cOrange;
+    background-image: -webkit-linear-gradient(100deg, cOrange, cYellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform translateY(30px)
+    opacity 0
+    transition-duration .5s
+    &.active
+      transform translateY(0)
+      opacity 1
+      box-shadow:  10px 4px #1d89ff,
+              10px 4px 2px rgba(0, 0, 0, 0.3), 20px -4px #feab3a,
+              20px -4px 2px rgba(0, 0, 0, 0.3),30px 8px #ff5964,
+              30px 8px 2px rgba(0, 0, 0, 0.3),-10px -8px #28b78d,
+              -10px -8px 2px rgba(0, 0, 0, 0.3),-20px 8px #bd2df5,
+              -20px 8px 2px rgba(0, 0, 0, 0.3)
+      &:before
+        background cWhite
+  h4
+    font-weight fontBold
+    margin-bottom: 35px;
+    margin-top: 0;
+    transition margin-top 0.3s ease
+    color cOrange
+    background-image: -webkit-linear-gradient(92deg, cOrange, cYellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  .download-options
+    .download-bttn
+      button
+        font-weight fontBold
+  .author
+    background: transparent;
+    color: cOrange;
+    margin-bottom 70px
+    padding-top: 20px;
+    background-image: -webkit-linear-gradient(92deg, cOrange, cYellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    button
+      background: transparent;
+      color: cOrange;
+      background-image: -webkit-linear-gradient(92deg, cOrange, cYellow);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding 4px
+
+.fancy-box-wrapper
+  margin-top: 380px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  position relative
+  &:before
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: cClean;
+    box-shadow: 0 -10px 40px rgba(0,0,0,.05);
+    z-index: -2;
+  .box-wrapper
+    max-width: 870px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    overflow hidden
+    &.padding-top
+      padding-top 45px
+    .box-animate
+      width 250px
+      height 250px
+      border-radius 4px
+    .box-animate
+      margin 40px 20px 0 20px
+      display inline-block
+      vertical-align top
+    .box
+      padding: 15px;
+      border-radius 4px
+      width: 220px;
+      height: 220px;
+      box-shadow: 0 20px 20px rgba(0,0,0,.08);
+      transition: all 250ms anim_func;
+      &:hover
+        box-shadow: 0 40px 40px rgba(0,0,0,.16);
+        transform: translate(0,-10px);
+      .title
+        font-size: 20px;
+        font-weight: 600;
+        margin: 10px 0 15px 0
+      hr
+        margin: 15px 0;
+        border-width: 0;
+        border-bottom-width: 1px;
+        border-style: dashed;
+      .classname
+        background: #fafafa;
+        padding: 12px 5px;
+        border-left: 2px solid;
+        margin: 20px 0;
+        font-size: 11px;
+        font-family: monospace;
+      .button-wrapper
+        text-align: center;
+        margin: 32px 0;
+        height: 45px;
+        line-height: 45px;
+      .code-copy
+        position: absolute;
+        right: 15px;
+        bottom: 10px;
+        font-weight: fontBold;
+        font-size: 10px;
+        padding: 2px 4px;
+        border-radius: 2px;
+        cursor pointer
+        overflow hidden
+        opacity 0
+        transform rotate(0.001deg) translateY(6px)
+        transition all 0.3s anim_func
+        &:before
+          transition all 0.3s anim_func
+          position: absolute;
+          content: '';
+          width: 100%;
+          border-radius: 2px;
+          height: 100%;
+          background: currentColor;
+          left: 0;
+          top: 0;
+          opacity: 0.2;
+          z-index -1
+      &:hover
+        .code-copy
+          opacity 1
+          transition all 1s anim_func
+          transform rotate(0.001deg) translateY(0)
+  .options-chooser
+    z-index: 10;
+    position relative
+    margin-bottom -15px
+    height 60px
+    transition box-shadow 0.3s anim_func
+    &.fixed
+      background cClean
+      position fixed
+      top: 0;
+      width: 100%;
+      box-shadow: 0 20px 20px rgba(0,0,0,0.08);
+      .options-chooser-container
+        border-bottom 0
+    .options-chooser-container
+      max-width: 870px;
+      width: 100%;
+      margin: 0 auto;
+      overflow hidden
+      height: 60px;
+      border-bottom: 1px solid #f5f5f5;
+      .half
+        width 50%
+        display inline-block
+        vertical-align top
+        flex: 1;
+        height: 100%;
+        &.right
+          text-align right
+      .colors
+        .color-round
+          width: 34px;
+          height: 34px;
+          display: inline-block;
+          margin: 11px 10px;
+          cursor pointer
+        .color
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+          transform: scale(0.7);
+          border: 2px solid cClean;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+          cursor pointer
+          transition all 0.3s anim_func
+          &:hover
+            transform: scale(0.85);
+          &.active
+            transform: scale(0.9);
+            border-radius 4px 50% 50% 50%
+      .sizes
+        .size-box
+          width 240px
+          display inline-block
+          position relative
+          .size-block
+            width: 40px;
+            height: 34px;
+            display: inline-block;
+            margin: 10px;
+            cursor pointer
+          .size
+            transform: scale(0.7);
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+            line-height: 36px;
+            opacity 0.7
+            cursor pointer
+            text-align center
+            transition all 0.3s anim_func
+            &:hover
+              transform: scale(0.9);
+              opacity 0.8
+            &.active
+              opacity 1
+              transform: scale(1);
+          .size-slider
+            position: absolute;
+            bottom: -6px;
+            height: 3px;
+            width: 60px;
+            transition transform 0.3s anim_func
+
+@media screen and (max-width: 869px)
+  .bttn-logo-box
+    .bttn-jelly
+      margin-top 55px
+
+  .hidden-xs
+    display none !important
+
+  .fancy-box-wrapper
+    padding 1px 15px
+
+  .options-chooser
+    height: 120px !important;
+    left: 0;
+    .options-chooser-container
+      height 120px !important
+      .half
+        width: 100% !important;
+        height: 50% !important;
+        text-align: center !important;
+    &.fixed
+      height: 120px;
+      left: 0;
+      .options-chooser-container
+        height 120px
+        .half
+          width: 100%;
+          height: 50%;
+          text-align: center !important;
+  .box-wrapper
+    &.padding-top
+      padding-top 105px !important
+
+  .bttn-logo-box h4
+    padding 0 20px
+
+  .bttn-logo-box .bttn-jelly.active
+    transform: translateY(0) scale(0.9);
+
+  .box-animate
+    width: calc(100% - 40px) !important;
+    display: block !important;
+    .box
+      width: calc(100% - 30px) !important;
+      .code-copy
+        display none
+
