@@ -15,13 +15,13 @@ Demo - https://bttn.surge.sh/
 - `bttn-material-flat`
 
 #### Button helper classes
-- bttn-block
+- `bttn-block`
 
 #### Button sizes
-- bttn-xs
-- bttn-sm
-- bttn-md
-- bttn-lg
+- `bttn-xs`
+- `bttn-sm`
+- `bttn-md`
+- `bttn-lg`
 
 #### Usage
 Include 'bttn.min.css' in head of your html file and start using class in your button.
