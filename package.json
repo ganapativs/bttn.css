@@ -1,7 +1,7 @@
 {
   "name": "bttn.css",
   "version": "0.1.1",
-  "description": "Awesome CSS buttons for your next web project",
+  "description": "Simple buttons for your next awesome project!",
   "main": "bttn.min.css",
   "scripts": {
     "preinstall": "yarn global add stylus && yarn global add autoprefixer-stylus && yarn global add clean-css",
