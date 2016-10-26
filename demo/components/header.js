@@ -2,11 +2,11 @@
  * Created by Ganapati on 10/24/16.
  */
 
-import { h, Component } from 'preact';
+import {h, Component} from 'preact';
 
 export default class Header extends Component {
-    shouldComponentUpdate({scrollTop}, {animateLogo}) {
-        return animateLogo != this.state.animateLogo || scrollTop != this.props.scrollTop;
+    shouldComponentUpdate({}, {animateLogo}) {
+        return animateLogo != this.state.animateLogo;
     }
 
     componentWillMount() {
@@ -20,17 +20,12 @@ export default class Header extends Component {
             this.setState({
                 animateLogo: true
             });
-        }, 250);
+        }, 500);
     }
 
-    render({ parallaxThreshold, scrollTop, windowWidth }, { animateLogo }) {
+    render({}, {animateLogo}) {
         return (
-            <div class="row center-xs bttn-logo-box" id="logo-box"
-                 style={ scrollTop < parallaxThreshold && windowWidth >= 870 ? {
-                    transform: 'translate3d(0, 0, 0) translateY(' + (-scrollTop * 0.4) + 'px) scale(' +
-                                (1.2 - ((parallaxThreshold - scrollTop) / parallaxThreshold) * 0.2) + ')',
-                    opacity: 1 - (scrollTop / parallaxThreshold)
-                 } : {}}>
+            <div class="row center-xs bttn-logo-box" id="logo-box">
                 <div class="col-xs-12">
                     <div class="box">
                         <button class={{"bttn-jelly": true, "active": animateLogo}}>
@@ -40,7 +35,8 @@ export default class Header extends Component {
                         <div class="row col-xs-12 col-sm-8 col-md-6 col-lg-6 col-md-offset-3
                                     col-lg-offset-3 col-sm-offset-2 col-xs-offset-0 around-xs download-options">
                             <div class="col-xs-6 download-bttn end-xs animated fadeInUp">
-                                <a href="https://raw.githubusercontent.com/ganapativs/bttn.css/master/bttn.css" download="bttn.css">
+                                <a href="https://raw.githubusercontent.com/ganapativs/bttn.css/master/bttn.css"
+                                   download="bttn.css">
                                     <button class="bttn-gradient bttn-md bttn-warning">
                                         Download
                                     </button>

@@ -1,5 +1,8 @@
 @import "../../config/config.styl"
 
+*
+  box-sizing: border-box;
+
 body
   border 0
   padding 0
@@ -8,7 +11,7 @@ body
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden !important;
   color cDarkBlue
-  background: cWhite;
+  background: #FFFDE7;
   font-family: 'Quicksand', sans-serif;
   opacity 0
   transition opacity 0.3s anim_func
@@ -127,7 +130,7 @@ body
     overflow hidden
     &.padding-top
       padding-top 45px
-    .box-animate
+    .box-animate, .box
       width 250px
       height 250px
       border-radius 4px
@@ -137,9 +140,6 @@ body
       vertical-align top
     .box
       padding: 15px;
-      border-radius 4px
-      width: 220px;
-      height: 220px;
       box-shadow: 0 20px 20px rgba(0,0,0,.08);
       transition: all 250ms anim_func;
       &:hover

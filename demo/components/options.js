@@ -1,7 +1,17 @@
-import { h, Component } from 'preact';
+import {h, Component} from 'preact';
 
 export default class Options extends Component {
-	render({ colors, sizes, fixed, setColor, setSize, activeColor, activeSize }) {
+    shouldComponentUpdate({colors, sizes, fixed, setColor, setSize, activeColor, activeSize}) {
+        return colors != this.props.colors ||
+            sizes != this.props.sizes ||
+            fixed != this.props.fixed ||
+            setColor != this.props.setColor ||
+            activeColor != this.props.activeColor ||
+            activeSize != this.props.activeSize ||
+            setSize != this.props.setSize;
+    }
+
+    render({colors, sizes, fixed, setColor, setSize, activeColor, activeSize}) {
         let activeSizeIndex = Object.keys(sizes).findIndex((size) => size === activeSize);
         let activeColorIndex = Object.keys(colors).find((color) => color === activeColor);
 
@@ -15,13 +25,13 @@ export default class Options extends Component {
                                             style={{
                                                 'animation-delay': 0.4 + i * 0.07 + 's'
                                             }}>
-                                            <div class={{'color': true, 'active': color === activeColor}}
-                                                onClick={() => setColor(color)}
-                                                style={{
-                                                    background: colors[color]
-                                                }}>
-                                           </div>
-                                       </div>
+                                    <div class={{'color': true, 'active': color === activeColor}}
+                                         onClick={() => setColor(color)}
+                                         style={{
+                                             background: colors[color]
+                                         }}>
+                                    </div>
+                                </div>
                             })
                         }
                     </div>
@@ -51,5 +61,5 @@ export default class Options extends Component {
                 </div>
             </div>
         );
-	}
+    }
 }

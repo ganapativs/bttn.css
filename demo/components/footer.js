@@ -1,11 +1,11 @@
-import { h, Component } from 'preact';
+import {h, Component} from 'preact';
 
 export default class Footer extends Component {
-	shouldComponentUpdate() {
-		return false;
-	}
+    shouldComponentUpdate() {
+        return false;
+    }
 
-	render() {
+    render() {
         return (
             <div class="footer animated fadeInUp">
                 <a href="http://meetguns.com" class="hidden-xs" target="_blank">
@@ -30,5 +30,5 @@ export default class Footer extends Component {
                 </a>
             </div>
         );
-	}
+    }
 }
