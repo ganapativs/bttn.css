@@ -16,14 +16,21 @@ Simple buttons for your next awesome project!
 - `bttn-material-circle`
 - `bttn-material-flat`
 
-#### Button helper classes
-- `bttn-block`
-
 #### Button sizes
 - `bttn-xs`
 - `bttn-sm`
 - `bttn-md`
 - `bttn-lg`
+
+#### Button Colors
+- `bttn-default`
+- `bttn-primary`
+- `bttn-warning`
+- `bttn-success`
+- `bttn-danger`
+
+#### Button helper classes
+- `bttn-block`
 
 #### Usage
 Include 'bttn.min.css' in head of your html file and start using class in your button.
