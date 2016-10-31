@@ -70,6 +70,13 @@ export default class BttnBox extends Component {
                          }}>
                         .bttn-{bttn.name}.bttn-{size}
                     </div>
+                    {
+                        bttn.isBeta
+                        ?
+                            <div class="beta" title="Unpolished">BETA</div>
+                        :
+                            null
+                    }
                     <div class={"code-copy code-copy" + i}>{textCopied ? 'Copied' : 'Copy code'}</div>
                 </div>
             </div>

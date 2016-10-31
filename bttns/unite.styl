@@ -1,0 +1,123 @@
+.bttn-unite
+  {bttnBaseStyle}
+  {bttnMdSize}
+  background cWhite
+  color cBlue
+  border: 1px solid cBlue;
+  z-index: 0;
+  border-radius 100px
+  overflow hidden
+  transition all 0.3s anim_func
+  &:before
+    position: absolute;
+    content: '';
+    left 0
+    top 0
+    width 100%
+    height 400%
+    background: #d6e3ff;
+    opacity 0
+    z-index -1
+    transform translate3d(-110%, -65%, 0) rotate(30deg)
+    transition transform 0.15s anim_func, opacity 0.15s anim_func
+  &:after
+    position: absolute;
+    content: '';
+    left 0
+    top 0
+    width 100%
+    height 400%
+    background: #d6e3ff - rgba(0,0,0,0.3);
+    opacity 0
+    z-index -1
+    transform translate3d(110%, 15%, 0) rotate(30deg)
+    transition transform 0.15s anim_func, opacity 0.15s anim_func
+  &:hover, &:focus
+    color cBlue
+    outline none
+    box-shadow 0 1px 8px cBlack - rgba(0, 0, 0, .7)
+    transition all 0.5s anim_func
+    &:before
+        transform translate3d(-50%, -50%, 0) rotate(35deg)
+        opacity 1
+        transition transform 0.25s anim_func, opacity 0.25s anim_func
+    &:after
+        transform translate3d(50%, -25%, 0) rotate(35deg)
+        opacity 1
+        transition transform 0.25s anim_func, opacity 0.25s anim_func
+  &.bttn-xs
+    {bttnXsSize}
+    &:hover, &:focus
+      box-shadow 0 1px 4px cBlack - rgba(0, 0, 0, .7)
+  &.bttn-sm
+    {bttnSmSize}
+    &:hover, &:focus
+      box-shadow 0 1px 6px cBlack - rgba(0, 0, 0, .7)
+  &.bttn-md
+    {bttnMdSize}
+    &:hover, &:focus
+      box-shadow 0 1px 8px cBlack - rgba(0, 0, 0, .7)
+  &.bttn-lg
+    {bttnLgSize}
+    &:hover, &:focus
+      box-shadow 0 1px 10px cBlack - rgba(0, 0, 0, .7)
+  &.bttn-default
+    color cBlue
+    border-color cBlue
+    &:hover, &:focus
+      color cBlue
+      background #d6e3ff
+    &:before
+        background #d6e3ff - 10%;
+    &:after
+        background #d6e3ff
+  &.bttn-primary
+    color cBlue
+    border-color cBlue
+    &:hover, &:focus
+      background cBlue
+      color cWhite
+    &:before
+        background cBlue - 20%;
+    &:after
+        background cBlue
+  &.bttn-warning
+    color cYellow
+    border-color cYellow
+    &:hover, &:focus
+      color cWhite
+      background cYellow
+    &:before
+        background cYellow - 20%;
+    &:after
+        background cYellow
+  &.bttn-danger
+    color cRedLight
+    border-color cRedLight
+    &:hover, &:focus
+      color cWhite
+      background cRedLight
+    &:before
+        background cRedLight - 20%;
+    &:after
+        background cRedLight
+  &.bttn-success
+    color cGreen
+    border-color cGreen
+    &:hover, &:focus
+      color cWhite
+      background cGreen
+    &:before
+        background cGreen - 20%;
+    &:after
+        background cGreen
+  &.bttn-royal
+    color cPurple
+    border-color cPurple
+    &:hover, &:focus
+      color cWhite
+      background cPurple
+    &:before
+        background cPurple - 20%;
+    &:after
+        background cPurple
