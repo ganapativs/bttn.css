@@ -47,6 +47,12 @@ export default [
         texts: defaultText
     },
     {
+        name: 'float',
+        className: 'bttn-float',
+        displayName: 'Float',
+        texts: defaultText
+    },
+    {
         name: 'gradient',
         className: 'bttn-gradient',
         displayName: 'Gradient',
