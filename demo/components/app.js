@@ -35,7 +35,8 @@ let defaultColors = [
     '#8bc34a',
     '#ff9800',
     '#795548',
-    '#607d8b'
+    '#607d8b',
+    '#b5883f'
 ];
 
 let hexToRgb = (hex, opacity) => {

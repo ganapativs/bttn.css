@@ -41,6 +41,12 @@ export default [
         texts: defaultText
     },
     {
+        name: 'pill',
+        className: 'bttn-pill',
+        displayName: 'Pill',
+        texts: defaultText
+    },
+    {
         name: 'gradient',
         className: 'bttn-gradient',
         displayName: 'Gradient',

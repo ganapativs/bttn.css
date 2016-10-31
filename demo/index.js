@@ -12,6 +12,7 @@ WebFont.load({
       families: ['Quicksand:300,400,700']
     },
     active: () => document.body.style.opacity = 1,
+    inactive: () => document.body.style.opacity = 1
 });
 
 render((

@@ -1,0 +1,41 @@
+.bttn-material-flat
+  {bttnBaseStyle}
+  {bttnMdSize}
+  border-width: 0
+  border-radius 2px
+  background cWhite
+  color cBlue
+  overflow hidden
+  transform translate3d(0, 0, 0)
+  box-shadow 0 2px 5px 0 rgba(0,0,0,0.18),0 1px 5px 0 rgba(0,0,0,0.15)
+  text-transform uppercase
+  transition all 0.25s anim_func
+  &:hover, &:focus
+    transition box-shadow 0.4s ease-out
+    box-shadow 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15)
+  &.bttn-xs
+    {bttnXsSize}
+  &.bttn-sm
+    {bttnSmSize}
+  &.bttn-md
+    {bttnMdSize}
+  &.bttn-lg
+    {bttnLgSize}
+  &.bttn-default
+    background cWhite
+    color cBlue
+  &.bttn-primary
+    background cBlue
+    color cWhite
+  &.bttn-warning
+    background cYellow
+    color cWhite
+  &.bttn-danger
+    background cRedLight
+    color cWhite
+  &.bttn-success
+    background cGreen
+    color cWhite
+  &.bttn-royal
+    background cPurple
+    color cWhite
