@@ -3,8 +3,8 @@ import WebFont from 'webfontloader';
 import App from './components/app';
 import 'animate.css';
 import '../bttn.styl';
-import './style/flexboxgrid.css';
-import './style/demo.styl';
+import './styles/flexboxgrid.css';
+import './styles/demo.styl';
 
 // Load google fonts
 WebFont.load({
