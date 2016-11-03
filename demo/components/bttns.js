@@ -91,4 +91,4 @@ export default [
         isBeta: true,
         texts: defaultText
     }
-]
+].reverse()

@@ -7,18 +7,18 @@
   z-index: 0;
   border-radius 100px
   overflow hidden
-  transition all 0.3s anim_func
+  transition color 0.3s anim_func, border-color 0.3s anim_func
   &:before
     position: absolute;
     content: '';
     left 0
     top 0
     width 100%
-    height 400%
+    height 120%
     background: #d6e3ff;
     opacity 0
     z-index -1
-    transform translate3d(-110%, -65%, 0) rotate(30deg)
+    transform translate3d(-110%, -10%, 0) skewX(-20deg)
     transition transform 0.15s anim_func, opacity 0.15s anim_func
   &:after
     position: absolute;
@@ -26,11 +26,11 @@
     left 0
     top 0
     width 100%
-    height 400%
+    height 120%
     background: #d6e3ff - rgba(0,0,0,0.3);
     opacity 0
     z-index -1
-    transform translate3d(110%, 15%, 0) rotate(30deg)
+    transform translate3d(110%, -10%, 0) skewX(-20deg)
     transition transform 0.15s anim_func, opacity 0.15s anim_func
   &:hover, &:focus
     color cBlue
@@ -38,11 +38,11 @@
     box-shadow 0 1px 8px cBlack - rgba(0, 0, 0, .7)
     transition all 0.5s anim_func
     &:before
-        transform translate3d(-50%, -50%, 0) rotate(35deg)
+        transform translate3d(-50%, -10%, 0) skewX(-20deg)
         opacity 1
         transition transform 0.25s anim_func, opacity 0.25s anim_func
     &:after
-        transform translate3d(50%, -25%, 0) rotate(35deg)
+        transform translate3d(50%, -10%, 0) skewX(-20deg)
         opacity 1
         transition transform 0.25s anim_func, opacity 0.25s anim_func
   &.bttn-xs

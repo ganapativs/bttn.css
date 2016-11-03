@@ -1,13 +1,13 @@
 {
   "name": "bttn.css",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Awesome buttons for awesome projects!",
   "main": "bttn.min.css",
   "scripts": {
-    "preinstall": "yarn global add stylus && yarn global add autoprefixer-stylus && yarn global add clean-css",
+    "preinstall": "yarn add stylus && yarn add autoprefixer-stylus && yarn add cssnano-cli",
     "start": "stylus -w  -u autoprefixer-stylus bttn.styl -o bttn.css",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress",
-    "build": "stylus -u autoprefixer-stylus bttn.styl -o bttn.css && cleancss -o bttn.min.css bttn.css && cross-env NODE_ENV=production webpack -p --progress",
+    "build": "stylus -u autoprefixer-stylus bttn.styl -o bttn.css && cssnano bttn.css bttn.min.css && cross-env NODE_ENV=production webpack -p --progress",
     "prebuild": "mkdirp build",
     "surge": "surge build -d bttn.surge.sh",
     "test": "eslint src tests/**/*.js"
@@ -63,8 +63,8 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "autoprefixer-stylus": "^0.11.0",
-    "clean-css": "^3.4.20",
     "clipboard": "^1.5.15",
+    "cssnano-cli": "^1.0.5",
     "preact": "^4.8.0",
     "preact-redux": "^1.0.1",
     "redux": "^3.5.2",
