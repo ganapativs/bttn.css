@@ -67,6 +67,5 @@ open build/index.html in browser
 </pre>
 
 ##TODO
-- Optimize & remove duplicate css properties
 - Add loading & done state animations
 - Test on older version of the browsers
