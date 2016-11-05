@@ -15,6 +15,10 @@ Awesome buttons for awesome projects!
 - `bttn-fill`
 - `bttn-material-circle`
 - `bttn-material-flat`
+- `bttn-pill`
+- `bttn-float`
+- `bttn-unite`
+- `bttn-slant`
 
 #### Button sizes
 - `bttn-xs`
