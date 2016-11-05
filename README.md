@@ -1,5 +1,5 @@
 # bttn.css
-Simple buttons for your next awesome project!
+Awesome buttons for awesome projects!
 
 ##Demo - https://bttn.surge.sh/
 

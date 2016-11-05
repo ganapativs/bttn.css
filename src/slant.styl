@@ -1,0 +1,101 @@
+.bttn-slant
+  {bttnBaseStyle}
+  {bttnMdSize}
+  background transparent
+  color cBlue
+  border: none;
+  z-index: 0;
+  border-radius 0
+  transition color 0.3s anim_func, transform 0.3s anim_func
+  &:before
+    position: absolute;
+    content: '';
+    left 0
+    top 0
+    width: 100%;
+    height: 100%;
+    background: cClean;
+    z-index: -1;
+    transform: skewX(20deg);
+    transition box-shadow 0.2s anim_func
+  &:after
+    position: absolute;
+    content: '';
+    left 0
+    top 0
+    width: 0;
+    height: 100%;
+    background: cClean - rgba(0, 0, 0, .7);
+    z-index: -1;
+    transform: skewX(20deg);
+    opacity 0
+    transition opacity 0.2s anim_func,width 0.15s anim_func
+  &:hover, &:focus
+    transform translateX(5px)
+    &:after
+      opacity 1
+      width 5px
+    &:before
+      box-shadow inset 0 -1px 0 #d6e3ff - 10%, inset 0 1px 0px #d6e3ff - 10%, inset -1px 0px 0px #d6e3ff - 10%
+  &.bttn-xs
+    {bttnXsSize}
+  &.bttn-sm
+    {bttnSmSize}
+  &.bttn-md
+    {bttnMdSize}
+  &.bttn-lg
+    {bttnLgSize}
+  &.bttn-default
+    color cBlue
+    &:hover, &:focus
+      &:before
+        box-shadow inset 0 -1px 0 #d6e3ff - 10%, inset 0 1px 0px #d6e3ff - 10%, inset -1px 0px 0px #d6e3ff - 10%
+    &:before
+        background cWhite;
+    &:after
+        background #d6e3ff - 10%
+  &.bttn-primary
+    color cWhite
+    &:hover, &:focus
+      &:before
+        box-shadow inset 0 -1px 0 cBlue - 20%, inset 0 1px 0px cBlue - 20%, inset -1px 0px 0px cBlue - 20%
+    &:before
+        background cBlue;
+    &:after
+        background cBlue - 20%
+  &.bttn-warning
+    color cWhite
+    &:hover, &:focus
+      &:before
+        box-shadow inset 0 -1px 0 cYellow - 20%, inset 0 1px 0px cYellow - 20%, inset -1px 0px 0px cYellow - 20%
+    &:before
+        background cYellow;
+    &:after
+        background cYellow - 20%
+  &.bttn-danger
+    color cWhite
+    &:hover, &:focus
+      &:before
+        box-shadow inset 0 -1px 0 cRedLight - 20%, inset 0 1px 0px cRedLight - 20%, inset -1px 0px 0px cRedLight - 20%
+    &:before
+        background cRedLight;
+    &:after
+        background cRedLight - 20%
+  &.bttn-success
+    color cWhite
+    &:hover, &:focus
+      &:before
+        box-shadow inset 0 -1px 0 cGreen - 20%, inset 0 1px 0px cGreen - 20%, inset -1px 0px 0px cGreen - 20%
+    &:before
+        background cGreen;
+    &:after
+        background cGreen - 20%
+  &.bttn-royal
+    color cWhite
+    &:hover, &:focus
+      &:before
+        box-shadow inset 0 -1px 0 cPurple - 20%, inset 0 1px 0px cPurple - 20%, inset -1px 0px 0px cPurple - 20%
+    &:before
+        background cPurple;
+    &:after
+        background cPurple - 20%

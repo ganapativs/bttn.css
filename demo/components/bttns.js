@@ -90,5 +90,12 @@ export default [
         displayName: 'Unite',
         isBeta: true,
         texts: defaultText
+    },
+    {
+        name: 'slant',
+        className: 'bttn-slant',
+        displayName: 'Slant',
+        isBeta: true,
+        texts: defaultText
     }
 ].reverse()

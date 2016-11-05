@@ -1,6 +1,6 @@
 {
   "name": "bttn.css",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Awesome buttons for awesome projects!",
   "main": "bttn.min.css",
   "scripts": {
