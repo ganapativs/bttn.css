@@ -1,14 +1,14 @@
 {
   "name": "bttn.css",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "description": "Awesome buttons for awesome projects!",
   "main": "bttn.min.css",
   "scripts": {
     "preinstall": "yarn add stylus && yarn add autoprefixer-stylus && yarn add cssnano-cli",
-    "start": "stylus -w  -u autoprefixer-stylus bttn.styl -o bttn.css",
+    "start": "stylus -w  -u autoprefixer-stylus bttn.styl -o dist/bttn.css",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress",
-    "build": "stylus -u autoprefixer-stylus bttn.styl -o bttn.css && cssnano bttn.css bttn.min.css && cross-env NODE_ENV=production webpack -p --progress",
-    "prebuild": "mkdirp build",
+    "build": "stylus -u autoprefixer-stylus bttn.styl -o dist/bttn.css && stylus -u autoprefixer-stylus src/standalone/* -o dist/standalone/ && cssnano dist/bttn.css dist/bttn.min.css && cross-env NODE_ENV=production webpack -p --progress",
+    "prebuild": "mkdirp build && mkdirp dist && mkdirp dist/standalone",
     "surge": "surge build -d bttn.surge.sh",
     "test": "eslint src tests/**/*.js"
   },

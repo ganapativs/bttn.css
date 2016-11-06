@@ -56,7 +56,15 @@ export default class BttnBox extends Component {
                          color: color,
                          background: background
                      }}>
-                    <div class="title">{bttn.displayName}</div>
+                    <div class="title-wrapper">
+                        <div class="title">{bttn.displayName}</div>
+                        <a href={"https://raw.githubusercontent.com/ganapativs/bttn.css/master/dist/standalone/" + bttn.name + ".css"}
+                           download={bttn.name + ".css"}>
+                            <div class="download-standalone hidden-xs" title={"Download standalone " + bttn.name + ".css"}>
+                                <i class="icon-cloud-download"/>
+                            </div>
+                        </a>
+                    </div>
                     <hr/>
                     <div class="button-wrapper animated fadeIn">
                         <button class={"bttn-" + bttn.name + " bttn-" + size + " bttn-" + activeColor}

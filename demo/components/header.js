@@ -35,7 +35,7 @@ export default class Header extends Component {
                         <div class="row col-xs-12 col-sm-8 col-md-6 col-lg-6 col-md-offset-3
                                     col-lg-offset-3 col-sm-offset-2 col-xs-offset-0 around-xs download-options">
                             <div class="col-xs-6 download-bttn end-xs animated fadeInUp">
-                                <a href="https://raw.githubusercontent.com/ganapativs/bttn.css/master/bttn.css"
+                                <a href="https://raw.githubusercontent.com/ganapativs/bttn.css/master/dist/bttn.css"
                                    download="bttn.css">
                                     <button class="bttn-gradient bttn-md bttn-warning">
                                         Download
@@ -53,7 +53,7 @@ export default class Header extends Component {
                         <div class="row col-xs-12 col-sm-8 col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3
                                     col-sm-offset-2 around-xs author animated fadeInUp">
                             <div class="col-xs-12 download-bttn center-xs">
-                                v0.1.8 • with ❤
+                                v0.2.0 • with ❤
                                 <a href="https://twitter.com/ganapativs" target="_blank">
                                     <button class="bttn-simple bttn-sm">
                                         @ganapativs

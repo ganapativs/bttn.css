@@ -148,10 +148,34 @@ body
       &:hover
         box-shadow: 0 40px 40px rgba(0,0,0,.16);
         transform: translate(0,-10px);
-      .title
+        .download-standalone
+          opacity 1 !important
+          filter grayscale(0) !important
+          transform scale(1) !important
+          &:hover
+            box-shadow: 0 1px 1px #ccc;
+      .title-wrapper
         font-size: 20px;
         font-weight: 600;
         margin: 10px 0 15px 0
+        .title
+          width calc(100% - 30px)
+          display inline-block
+        .download-standalone
+          line-height: 30px;
+          padding: 1px;
+          border-radius: 50%;
+          position: absolute;
+          height: 30px;
+          top: 20px;
+          width: 30px;
+          display: inline-block;
+          text-align: center;
+          cursor: pointer;
+          opacity 0
+          transform scale(0.6)
+          filter grayscale(1)
+          transition transform 0.2s anim_func, filter 0.2s anim_func, opacity 0.2s anim_func, box-shadow 0.2s anim_func
       hr
         margin: 15px 0;
         border-width: 0;
