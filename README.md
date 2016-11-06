@@ -32,6 +32,7 @@ Awesome buttons for awesome projects!
 - `bttn-warning`
 - `bttn-success`
 - `bttn-danger`
+- `bttn-royal`
 
 #### Button helper classes
 - `bttn-block`
