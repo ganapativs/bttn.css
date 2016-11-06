@@ -4,6 +4,7 @@ import App from './components/app';
 import 'animate.css';
 import '../bttn.styl';
 import './styles/flexboxgrid.css';
+import './styles/hint.min.css';
 import './styles/demo.styl';
 
 // Load google fonts

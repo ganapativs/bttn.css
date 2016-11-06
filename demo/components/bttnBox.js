@@ -60,7 +60,8 @@ export default class BttnBox extends Component {
                         <div class="title">{bttn.displayName}</div>
                         <a href={"https://raw.githubusercontent.com/ganapativs/bttn.css/master/dist/standalone/" + bttn.name + ".css"}
                            download={bttn.name + ".css"}>
-                            <div class="download-standalone hidden-xs" title={"Download standalone " + bttn.name + ".css"}>
+                            <div class="download-standalone hidden-xs hint--bottom-left hint--rounded hint--bounce"
+                                 aria-label={"Download standalone " + bttn.name + ".css"}>
                                 <i class="icon-cloud-download"/>
                             </div>
                         </a>
@@ -81,7 +82,10 @@ export default class BttnBox extends Component {
                     {
                         bttn.isBeta
                         ?
-                            <div class="beta" title="Unpolished">BETA</div>
+                            <div class="beta hint--top-right hint--rounded hint--bounce"
+                                 aria-label={"Unpolished"}>
+                                BETA
+                            </div>
                         :
                             null
                     }
