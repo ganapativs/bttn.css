@@ -59,7 +59,7 @@ export default class App extends Component {
         });
         window.onscroll = () => {
             let fixed = ((document.documentElement.scrollTop || document.body.scrollTop) - 20) >= parallaxThreshold;
-            if(this.state.fixed != fixed)
+            if (this.state.fixed != fixed)
                 this.setState({
                     fixed
                 });
@@ -102,19 +102,19 @@ export default class App extends Component {
                             "padding-top": fixed,
                             "animated fadeInUp": windowWidth >= 870
                         }}>
-                        {
-                            Bttns.map((bttn, i) => {
-                                return <BttnBox bttn={bttn}
-                                                key={i}
-                                                i={i}
-                                                size={sizes[activeSize]}
-                                                activeSize={activeSize}
-                                                activeColor={activeColor}
-                                                color={colors[activeColor]}
-                                                codeBackground={activeColor === 'default' ? hexToRgb(defaultColors[i], 0.2) : '#fafafa'}
-                                                background={activeColor === 'default' ? hexToRgb(defaultColors[i], 0.5) : '#ffffff'}/>
-                            })
-                        }
+                            {
+                                Bttns.map((bttn, i) => {
+                                    return <BttnBox bttn={bttn}
+                                                    key={i}
+                                                    i={i}
+                                                    size={sizes[activeSize]}
+                                                    activeSize={activeSize}
+                                                    activeColor={activeColor}
+                                                    color={colors[activeColor]}
+                                                    codeBackground={activeColor === 'default' ? hexToRgb(defaultColors[i], 0.2) : '#fafafa'}
+                                                    background={activeColor === 'default' ? hexToRgb(defaultColors[i], 0.5) : '#ffffff'}/>
+                                })
+                            }
                         </div>
                     </div>
                     <Footer />

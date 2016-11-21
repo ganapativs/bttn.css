@@ -81,12 +81,12 @@ export default class BttnBox extends Component {
                     </div>
                     {
                         bttn.isBeta
-                        ?
+                            ?
                             <div class="beta hint--top-right hint--rounded hint--bounce"
                                  aria-label={"Unpolished"}>
                                 BETA
                             </div>
-                        :
+                            :
                             null
                     }
                     <div class={"code-copy code-copy" + i}>{textCopied ? 'Copied' : 'Copy code'}</div>
