@@ -61,6 +61,11 @@ yarn
 yarn start
 </pre>
 
+####Dev environment
+<pre>
+yarn run dev
+</pre>
+
 ####Minify css for production and build example folder javascript files(Webpack)
 <pre>
 yarn run build

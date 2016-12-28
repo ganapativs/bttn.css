@@ -2,7 +2,7 @@
 /*!
  *
  * bttn.css - https://ganapativs.github.io/bttn.css
- * Version - 0.2.0
+ * Version - 0.2.1
  * Demo: https://bttn.surge.sh
  *
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -82,11 +82,11 @@
   font-size: 20px;
   font-family: inherit;
   padding: 5px 12px;
+  overflow: hidden;
   border: 1px dotted #fff;
   border-radius: 4px;
   background: rgba(255,255,255,0.4);
   color: #fff;
-  overflow: hidden;
   -webkit-transition: opacity 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: opacity 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -142,32 +142,32 @@
           transform: translateY(-12px);
 }
 .bttn-float.bttn-default {
-  background: rgba(255,255,255,0.4);
   border-color: #fff;
+  background: rgba(255,255,255,0.4);
   color: #fff;
 }
 .bttn-float.bttn-primary {
-  background: rgba(29,137,255,0.4);
   border-color: #1d89ff;
+  background: rgba(29,137,255,0.4);
   color: #1d89ff;
 }
 .bttn-float.bttn-warning {
-  background: rgba(254,171,58,0.4);
   border-color: #feab3a;
+  background: rgba(254,171,58,0.4);
   color: #feab3a;
 }
 .bttn-float.bttn-danger {
-  background: rgba(255,89,100,0.4);
   border-color: #ff5964;
+  background: rgba(255,89,100,0.4);
   color: #ff5964;
 }
 .bttn-float.bttn-success {
-  background: rgba(40,183,141,0.4);
   border-color: #28b78d;
+  background: rgba(40,183,141,0.4);
   color: #28b78d;
 }
 .bttn-float.bttn-royal {
-  background: rgba(189,45,245,0.4);
   border-color: #bd2df5;
+  background: rgba(189,45,245,0.4);
   color: #bd2df5;
 }

@@ -2,7 +2,7 @@
 /*!
  *
  * bttn.css - https://ganapativs.github.io/bttn.css
- * Version - 0.2.0
+ * Version - 0.2.1
  * Demo: https://bttn.surge.sh
  *
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -82,37 +82,37 @@
   font-size: 20px;
   font-family: inherit;
   padding: 5px 12px;
+  overflow: hidden;
   border-width: 0;
   border-radius: 4px;
   background: transparent;
   color: #fff;
-  overflow: hidden;
   -webkit-transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 .bttn-minimal:after {
-  content: '';
   position: absolute;
   bottom: 0;
   left: 10px;
   width: calc(100% - 20px);
   height: 1px;
-  opacity: 0.65;
   background: currentColor;
+  content: '';
+  opacity: 0.65;
   -webkit-transition: opacity 0.5s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: opacity 0.5s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: transform 0.5s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: transform 0.5s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.5s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 .bttn-minimal:before {
-  content: '';
   position: absolute;
   bottom: 0;
   left: 10px;
   width: calc(100% - 20px);
   height: 1px;
-  opacity: 0.65;
   background: currentColor;
+  content: '';
+  opacity: 0.65;
   -webkit-transition: opacity 0.5s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: opacity 0.5s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: transform 0.5s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);

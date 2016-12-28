@@ -1,31 +1,31 @@
 .bttn-minimal
   {bttnBaseStyle}
   {bttnMdSize}
-  border-width: 0
-  border-radius 4px;
+  overflow hidden
+  border-width: 0;
+  border-radius 4px
   background transparent
   color: cWhite
-  overflow hidden
   transition all 0.5s anim_func
   &:after
-    content: '';
     position: absolute;
     bottom: 0;
     left: 10px;
     width: calc(100% - 20px);
     height: 1px;
-    opacity 0.65
     background: currentColor;
+    content: ''
+    opacity 0.65;
     transition transform 0.5s anim_func, opacity 0.5s anim_func
   &:before
-    content: '';
     position: absolute;
     bottom: 0;
     left: 10px;
     width: calc(100% - 20px);
     height: 1px;
-    opacity 0.65
     background: currentColor;
+    content: ''
+    opacity 0.65;
     transition transform 0.5s anim_func, opacity 0.5s anim_func
   &:hover, &:focus
     opacity 0.9

@@ -2,7 +2,7 @@
 /*!
  *
  * bttn.css - https://ganapativs.github.io/bttn.css
- * Version - 0.2.0
+ * Version - 0.2.1
  * Demo: https://bttn.surge.sh
  *
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -82,63 +82,63 @@
   font-size: 20px;
   font-family: inherit;
   padding: 5px 12px;
+  z-index: 0;
+  overflow: hidden;
+  border: none;
+  border-radius: 100px;
   background: #fff;
   color: #1d89ff;
-  border: none;
-  z-index: 0;
-  border-radius: 100px;
-  overflow: hidden;
   -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 .bttn-pill:before,
 .bttn-pill:after {
   position: absolute;
-  content: '';
+  right: 0;
+  bottom: 0;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background: #1d89ff;
-  right: 0;
-  -webkit-transform: translate(100%, -25%) translate3d(0, 0, 0);
-          transform: translate(100%, -25%) translate3d(0, 0, 0);
-  bottom: 0;
+  content: '';
   opacity: 0;
-  z-index: -1;
   -webkit-transition: opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  z-index: -1;
+  -webkit-transform: translate(100%, -25%) translate3d(0, 0, 0);
+          transform: translate(100%, -25%) translate3d(0, 0, 0);
 }
 .bttn-pill:hover,
 .bttn-pill:focus {
-  color: #fff;
   outline: none;
-  -webkit-transform: scale(1.1) translate3d(0, 0, 0);
-          transform: scale(1.1) translate3d(0, 0, 0);
   box-shadow: 0 1px 8px rgba(58,51,53,0.3);
+  color: #fff;
   -webkit-transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: scale(1.1) translate3d(0, 0, 0);
+          transform: scale(1.1) translate3d(0, 0, 0);
 }
 .bttn-pill:hover:before,
 .bttn-pill:focus:before {
-  -webkit-transform: translate3d(50%, 0, 0) scale(0.9);
-          transform: translate3d(50%, 0, 0) scale(0.9);
   opacity: 0.15;
   -webkit-transition: opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: translate3d(50%, 0, 0) scale(0.9);
+          transform: translate3d(50%, 0, 0) scale(0.9);
 }
 .bttn-pill:hover:after,
 .bttn-pill:focus:after {
-  -webkit-transform: translate(50%, 0) scale(1.1);
-          transform: translate(50%, 0) scale(1.1);
   opacity: 0.25;
   -webkit-transition: opacity 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: opacity 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: transform 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: transform 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: translate(50%, 0) scale(1.1);
+          transform: translate(50%, 0) scale(1.1);
 }
 .bttn-pill.bttn-xs {
   padding: 3px 8px;

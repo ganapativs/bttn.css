@@ -2,7 +2,7 @@
 /*!
  *
  * bttn.css - https://ganapativs.github.io/bttn.css
- * Version - 0.2.0
+ * Version - 0.2.1
  * Demo: https://bttn.surge.sh
  *
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -83,11 +83,11 @@
   font-size: 20px;
   font-family: inherit;
   padding: 5px 12px;
+  overflow: hidden;
   border-width: 0;
   border-radius: 4px;
   background: rgba(255,255,255,0.4);
   color: #fff;
-  overflow: hidden;
   -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
@@ -146,54 +146,54 @@
   background: #bd2df5;
 }
 .bttn-gradient {
-  color: #1d89ff;
   border-radius: 100px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.25);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #d6e3ff));
   background-image: -webkit-linear-gradient(top, #fff 0%, #d6e3ff 100%);
   background-image: linear-gradient(to bottom, #fff 0%, #d6e3ff 100%);
   background-image: -webkit-linear-gradient(93deg, #d6e3ff 0%, #fff 100%);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+  color: #1d89ff;
   text-shadow: 0 1px 0 rgba(255,255,255,0.25);
 }
 .bttn-gradient.bttn-default {
-  color: #1d89ff;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #d6e3ff));
   background-image: -webkit-linear-gradient(top, #fff 0%, #d6e3ff 100%);
   background-image: linear-gradient(to bottom, #fff 0%, #d6e3ff 100%);
   background-image: -webkit-linear-gradient(93deg, #d6e3ff 0%, #fff 100%);
+  color: #1d89ff;
 }
 .bttn-gradient.bttn-primary {
-  color: #fff;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #00bbd4), color-stop(1, #3f51b5));
   background-image: -webkit-linear-gradient(top, #00bbd4 0%, #3f51b5 100%);
   background-image: linear-gradient(to bottom, #00bbd4 0%, #3f51b5 100%);
   background-image: -webkit-linear-gradient(93deg, #3f51b5 0%, #00bbd4 100%);
+  color: #fff;
 }
 .bttn-gradient.bttn-warning {
-  color: #fff;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #feab3a), color-stop(1, #f35626));
   background-image: -webkit-linear-gradient(top, #feab3a 0%, #f35626 100%);
   background-image: linear-gradient(to bottom, #feab3a 0%, #f35626 100%);
   background-image: -webkit-linear-gradient(93deg, #f35626 0%, #feab3a 100%);
+  color: #fff;
 }
 .bttn-gradient.bttn-danger {
-  color: #fff;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff97c2), color-stop(1, #e91e63));
   background-image: -webkit-linear-gradient(top, #ff97c2 0%, #e91e63 100%);
   background-image: linear-gradient(to bottom, #ff97c2 0%, #e91e63 100%);
   background-image: -webkit-linear-gradient(93deg, #e91e63 0%, #ff97c2 100%);
+  color: #fff;
 }
 .bttn-gradient.bttn-success {
-  color: #fff;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9ccc65), color-stop(1, #009688));
   background-image: -webkit-linear-gradient(top, #9ccc65 0%, #009688 100%);
   background-image: linear-gradient(to bottom, #9ccc65 0%, #009688 100%);
   background-image: -webkit-linear-gradient(93deg, #009688 0%, #9ccc65 100%);
+  color: #fff;
 }
 .bttn-gradient.bttn-royal {
-  color: #fff;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9c27b0), color-stop(1, #512da8));
   background-image: -webkit-linear-gradient(top, #9c27b0 0%, #512da8 100%);
   background-image: linear-gradient(to bottom, #9c27b0 0%, #512da8 100%);
   background-image: -webkit-linear-gradient(93deg, #512da8 0%, #9c27b0 100%);
+  color: #fff;
 }

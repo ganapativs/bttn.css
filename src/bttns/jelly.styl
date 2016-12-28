@@ -1,33 +1,33 @@
 .bttn-jelly
   {bttnBaseStyle}
   {bttnMdSize}
-  background cWhite
-  border-radius 50px;
-  color cBlue
   overflow hidden
+  border-radius 50px;
+  background cWhite
+  color cBlue
   transition all 0.2s anim_func
   &:before
     position: absolute;
-    content: '';
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: currentColor;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    z-index -1
     border-radius 50px;
-    transform scale(0.2)
+    background: currentColor;
+    content: '';
+    z-index -1
+    opacity: 0;
     transition all 0.2s anim_func
+    transform scale(0.2)
   &:hover, &:focus
     outline none
     box-shadow 0 1px 8px cBlack - rgba(0, 0, 0, .6)
     transition all 0.3s anim_func
     transform scale(1.1)
     &:before
-      transform scale(1)
-      transition all 0.3s anim_func
       opacity: 0.15
+      transition all 0.3s anim_func
+      transform scale(1)
   &.bttn-xs
     {bttnXsSize}
     &:hover, &:focus

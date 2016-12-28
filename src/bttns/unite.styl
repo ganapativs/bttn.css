@@ -1,50 +1,50 @@
 .bttn-unite
   {bttnBaseStyle}
   {bttnMdSize}
+  z-index: 0
+  overflow hidden
+  border: 1px solid cBlue;
+  border-radius 100px;
   background cWhite
   color cBlue
-  border: 1px solid cBlue;
-  z-index: 0;
-  border-radius 100px
-  overflow hidden
   transition color 0.3s anim_func, border-color 0.3s anim_func
   &:before
     position: absolute;
-    content: '';
+    top 0;
     left 0
-    top 0
     width 100%
     height 120%
-    background: #d6e3ff;
+    background: #d6e3ff
+    content: '';
     opacity 0
     z-index -1
-    transform translate3d(-110%, -10%, 0) skewX(-20deg)
     transition transform 0.15s anim_func, opacity 0.15s anim_func
+    transform translate3d(-110%, -10%, 0) skewX(-20deg)
   &:after
     position: absolute;
-    content: '';
+    top 0;
     left 0
-    top 0
     width 100%
     height 120%
-    background: #d6e3ff - rgba(0,0,0,0.3);
+    background: #d6e3ff - rgba(0, 0, 0, 0.3)
+    content: '';
     opacity 0
     z-index -1
-    transform translate3d(110%, -10%, 0) skewX(-20deg)
     transition transform 0.15s anim_func, opacity 0.15s anim_func
+    transform translate3d(110%, -10%, 0) skewX(-20deg)
   &:hover, &:focus
-    color cBlue
     outline none
     box-shadow 0 1px 8px cBlack - rgba(0, 0, 0, .7)
+    color cBlue
     transition all 0.5s anim_func
     &:before
-        transform translate3d(-50%, -10%, 0) skewX(-20deg)
-        opacity 1
-        transition transform 0.25s anim_func, opacity 0.25s anim_func
+      opacity 1
+      transition transform 0.25s anim_func, opacity 0.25s anim_func
+      transform translate3d(-50%, -10%, 0) skewX(-20deg)
     &:after
-        transform translate3d(50%, -10%, 0) skewX(-20deg)
-        opacity 1
-        transition transform 0.25s anim_func, opacity 0.25s anim_func
+      opacity 1
+      transition transform 0.25s anim_func, opacity 0.25s anim_func
+      transform translate3d(50%, -10%, 0) skewX(-20deg)
   &.bttn-xs
     {bttnXsSize}
     &:hover, &:focus
@@ -62,62 +62,62 @@
     &:hover, &:focus
       box-shadow 0 1px 10px cBlack - rgba(0, 0, 0, .7)
   &.bttn-default
-    color cBlue
     border-color cBlue
+    color cBlue
     &:hover, &:focus
-      color cBlue
       background #d6e3ff
+      color cBlue
     &:before
-        background #d6e3ff - 10%;
+      background #d6e3ff - 10%;
     &:after
-        background #d6e3ff
+      background #d6e3ff
   &.bttn-primary
-    color cBlue
     border-color cBlue
+    color cBlue
     &:hover, &:focus
       background cBlue
       color cWhite
     &:before
-        background cBlue - 20%;
+      background cBlue - 20%;
     &:after
-        background cBlue
+      background cBlue
   &.bttn-warning
-    color cYellow
     border-color cYellow
+    color cYellow
     &:hover, &:focus
-      color cWhite
       background cYellow
+      color cWhite
     &:before
-        background cYellow - 20%;
+      background cYellow - 20%;
     &:after
-        background cYellow
+      background cYellow
   &.bttn-danger
-    color cRedLight
     border-color cRedLight
+    color cRedLight
     &:hover, &:focus
-      color cWhite
       background cRedLight
+      color cWhite
     &:before
-        background cRedLight - 20%;
+      background cRedLight - 20%;
     &:after
-        background cRedLight
+      background cRedLight
   &.bttn-success
-    color cGreen
     border-color cGreen
+    color cGreen
     &:hover, &:focus
-      color cWhite
       background cGreen
-    &:before
-        background cGreen - 20%;
-    &:after
-        background cGreen
-  &.bttn-royal
-    color cPurple
-    border-color cPurple
-    &:hover, &:focus
       color cWhite
-      background cPurple
     &:before
-        background cPurple - 20%;
+      background cGreen - 20%;
     &:after
-        background cPurple
+      background cGreen
+  &.bttn-royal
+    border-color cPurple
+    color cPurple
+    &:hover, &:focus
+      background cPurple
+      color cWhite
+    &:before
+      background cPurple - 20%;
+    &:after
+      background cPurple

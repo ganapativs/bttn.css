@@ -2,7 +2,7 @@
 /*!
  *
  * bttn.css - https://ganapativs.github.io/bttn.css
- * Version - 0.2.0
+ * Version - 0.2.1
  * Demo: https://bttn.surge.sh
  *
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -82,11 +82,11 @@
   font-size: 20px;
   font-family: inherit;
   padding: 5px 12px;
+  z-index: 0;
+  border: none;
+  border-radius: 0;
   background: transparent;
   color: #1d89ff;
-  border: none;
-  z-index: 0;
-  border-radius: 0;
   -webkit-transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -94,32 +94,32 @@
 }
 .bttn-slant:before {
   position: absolute;
-  content: '';
-  left: 0;
   top: 0;
+  left: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
   background: #fafafa;
-  z-index: -1;
-  -webkit-transform: skewX(20deg);
-          transform: skewX(20deg);
+  content: '';
   -webkit-transition: box-shadow 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: box-shadow 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: skewX(20deg);
+          transform: skewX(20deg);
 }
 .bttn-slant:after {
   position: absolute;
-  content: '';
-  left: 0;
   top: 0;
+  left: 0;
+  z-index: -1;
   width: 0;
   height: 100%;
   background: rgba(250,250,250,0.3);
-  z-index: -1;
-  -webkit-transform: skewX(20deg);
-          transform: skewX(20deg);
+  content: '';
   opacity: 0;
   -webkit-transition: opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), width 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), width 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: skewX(20deg);
+          transform: skewX(20deg);
 }
 .bttn-slant:hover,
 .bttn-slant:focus {
@@ -128,8 +128,8 @@
 }
 .bttn-slant:hover:after,
 .bttn-slant:focus:after {
-  opacity: 1;
   width: 5px;
+  opacity: 1;
 }
 .bttn-slant:hover:before,
 .bttn-slant:focus:before {
