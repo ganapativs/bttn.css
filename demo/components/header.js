@@ -39,6 +39,11 @@ export default class Header extends Component {
                                    download="bttn.css">
                                     <button class="bttn-gradient bttn-md bttn-warning">
                                         Download
+                                        <small>
+                                        	<strong style="vertical-align: middle;font-size: 10px;">
+                                        		&nbsp;(4kb gzip)
+                                        	</strong>
+                                        </small>
                                     </button>
                                 </a>
                             </div>
