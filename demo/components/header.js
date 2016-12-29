@@ -39,7 +39,7 @@ export default class Header extends Component {
                                    download="bttn.css">
                                     <button class="bttn-gradient bttn-md bttn-warning">
                                         Download
-                                        <small>
+                                        <small class="hidden-xs">
                                         	<strong style="vertical-align: middle;font-size: 10px;">
                                         		&nbsp;(4kb gzip)
                                         	</strong>
@@ -50,7 +50,7 @@ export default class Header extends Component {
                             <div class="col-xs-6 download-bttn start-xs animated fadeInUp">
                                 <a href="https://github.com/ganapativs/bttn.css" target="_blank">
                                     <button class="bttn-gradient bttn-md bttn-primary">
-                                        Github
+                                        Github<span class="hidden-xs"> Repo</span>
                                     </button>
                                 </a>
                             </div>
