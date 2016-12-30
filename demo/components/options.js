@@ -65,7 +65,7 @@ console.log(blockButton, buttonOutline)
                     <div className="half sizes left"></div>
                     <div className="half sizes right">
                         <div class="options-checkbox-container animated fadeInUp hint--left hint--rounded hint--bounce"
-                             data-hint="Full width buttons"
+                             data-hint="Full width buttons, Enable: `bttn-block`"
                              onClick={()=>setOptions('blockButton', !blockButton)}
                              style={{'animation-delay': '1s'}}>
                             <input class="options-checkbox options-checkbox-flat"
