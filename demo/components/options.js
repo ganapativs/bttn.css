@@ -76,7 +76,7 @@ console.log(blockButton, buttonOutline)
                             <span class={{"options-checkbox-btn-label": true, "active": blockButton}}>Block Buttons</span>
                         </div>
                         <div class="options-checkbox-container animated fadeInUp hint--left hint--rounded hint--bounce"
-                             data-hint="Show outline when navigating with keyboard, Disable: `bttn-no-outline`"
+                             data-hint="Button outline when navigating with keyboard, Disable: `bttn-no-outline`"
                              onClick={()=>setOptions('buttonOutline', !buttonOutline)}
                              style={{'animation-delay': '1.1s'}}>
                             <input class="options-checkbox options-checkbox-flat"
