@@ -75,7 +75,7 @@ export default class BttnBox extends Component {
                             ["bttn-" + size]: true,
                             ["bttn-" + activeColor]: true,
                             "bttn-block": block,
-                            "bttn-remove-outline": !outline
+                            "bttn-no-outline": !outline
                         }} dangerouslySetInnerHTML={{__html: bttn.texts[activeSize]}}>
                         </button>
                     </div>

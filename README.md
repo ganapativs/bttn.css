@@ -36,7 +36,7 @@ Awesome buttons for awesome projects!
 
 #### Button helper classes
 - `bttn-block`
-- `bttn-remove-outline` (Don't show outline when navigating with keyboard/interact using mouse or touch)
+- `bttn-no-outline` (Don't show outline when navigating with keyboard/interact using mouse or touch)
 
 #### Usage
 Include 'bttn.min.css' in head of your html file and start using class in your button.

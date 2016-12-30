@@ -2,7 +2,7 @@
 /*!
  *
  * bttn.css - https://ganapativs.github.io/bttn.css
- * Version - 0.2.2
+ * Version - 0.2.3
  * Demo: https://bttn.surge.sh
  *
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -1570,11 +1570,11 @@
   display: block;
   width: 100%;
 }
-.bttn-remove-outline {
+.bttn-no-outline {
   outline: none;
 }
-.bttn-remove-outline:hover,
-.bttn-remove-outline:focus,
-.bttn-remove-outline:active {
+.bttn-no-outline:hover,
+.bttn-no-outline:focus,
+.bttn-no-outline:active {
   outline: none;
 }
