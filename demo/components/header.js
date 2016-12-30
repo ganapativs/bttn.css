@@ -28,7 +28,7 @@ export default class Header extends Component {
             <div class="row center-xs bttn-logo-box" id="logo-box">
                 <div class="col-xs-12">
                     <div class="box">
-                        <button class={{"bttn-jelly": true, "active": animateLogo}}>
+                        <button class={{"bttn-jelly": true, "active": animateLogo, "bttn-remove-outline": true}}>
                             bttn.css
                         </button>
                         <h4 class="col-xs-12 animated fadeInUp">Awesome buttons for awesome projects!</h4>
@@ -37,7 +37,7 @@ export default class Header extends Component {
                             <div class="col-xs-6 download-bttn end-xs animated fadeInUp">
                                 <a href="https://raw.githubusercontent.com/ganapativs/bttn.css/master/dist/bttn.min.css"
                                    download="bttn.css">
-                                    <button class="bttn-gradient bttn-md bttn-warning">
+                                    <button class="bttn-gradient bttn-md bttn-warning bttn-remove-outline">
                                         Download
                                         <small class="hidden-xs">
                                         	<strong style="vertical-align: middle;font-size: 10px;">
@@ -49,7 +49,7 @@ export default class Header extends Component {
                             </div>
                             <div class="col-xs-6 download-bttn start-xs animated fadeInUp">
                                 <a href="https://github.com/ganapativs/bttn.css" target="_blank">
-                                    <button class="bttn-gradient bttn-md bttn-primary">
+                                    <button class="bttn-gradient bttn-md bttn-primary bttn-remove-outline">
                                         Github<span class="hidden-xs"> Repo</span>
                                     </button>
                                 </a>
@@ -58,9 +58,9 @@ export default class Header extends Component {
                         <div class="row col-xs-12 col-sm-8 col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3
                                     col-sm-offset-2 around-xs author animated fadeInUp">
                             <div class="col-xs-12 download-bttn center-xs">
-                                v0.2.1 • with ❤
+                                v0.2.2 • with ❤
                                 <a href="https://twitter.com/ganapativs" target="_blank">
-                                    <button class="bttn-simple bttn-sm">
+                                    <button class="bttn-simple bttn-sm bttn-remove-outline">
                                         @ganapativs
                                     </button>
                                 </a>

@@ -55,7 +55,9 @@ export default class App extends Component {
         this.setState({
             fixed: 0,
             activeColor: 'primary',
-            activeSize: 'medium'
+            activeSize: 'medium',
+            blockButton: false,
+            buttonOutline: false
         });
         window.onscroll = () => {
             let fixed = ((document.documentElement.scrollTop || document.body.scrollTop) - 20) >= parallaxThreshold;
@@ -78,13 +80,21 @@ export default class App extends Component {
         });
     }
 
-    shouldComponentUpdate({}, {fixed, activeColor, activeSize}) {
-        return fixed != this.state.fixed ||
-            activeColor != this.state.activeColor ||
-            activeSize != this.state.activeSize;
+    setOptions(option, value) {
+        this.setState({
+            [option]: value
+        });
     }
 
-    render({}, {fixed, activeColor, activeSize}) {
+    shouldComponentUpdate({}, {fixed, activeColor, activeSize, blockButton, buttonOutline}) {
+        return fixed != this.state.fixed ||
+            activeColor != this.state.activeColor ||
+            activeSize != this.state.activeSize ||
+            blockButton != this.state.blockButton ||
+            buttonOutline != this.state.buttonOutline;
+    }
+
+    render({}, {fixed, activeColor, activeSize, blockButton, buttonOutline}) {
         return (
             <div id="app">
                 <div>
@@ -93,8 +103,11 @@ export default class App extends Component {
                         <Options colors={colors}
                                  sizes={sizes}
                                  fixed={fixed}
+                                 blockButton={blockButton}
+                                 buttonOutline={buttonOutline}
                                  activeColor={activeColor}
                                  activeSize={activeSize}
+                                 setOptions={this.setOptions.bind(this)}
                                  setColor={this.setColor.bind(this)}
                                  setSize={this.setSize.bind(this)}/>
                         <div class={{
@@ -111,6 +124,8 @@ export default class App extends Component {
                                                     activeSize={activeSize}
                                                     activeColor={activeColor}
                                                     color={colors[activeColor]}
+                                                    block={blockButton}
+                                                    outline={buttonOutline}
                                                     codeBackground={activeColor === 'default' ? hexToRgb(defaultColors[i], 0.2) : '#fafafa'}
                                                     background={activeColor === 'default' ? hexToRgb(defaultColors[i], 0.5) : '#ffffff'}/>
                                 })

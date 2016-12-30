@@ -5,7 +5,7 @@ import {h, Component} from 'preact';
 import Clipboard from 'clipboard';
 
 export default class BttnBox extends Component {
-    shouldComponentUpdate({bttn, i, color, background, size, activeColor, activeSize, codeBackground}, {textCopied}) {
+    shouldComponentUpdate({bttn, i, color, background, size, activeColor, activeSize, codeBackground, block, outline}, {textCopied}) {
         return textCopied != this.state.textCopied ||
             bttn != this.props.bttn ||
             color != this.props.color ||
@@ -14,6 +14,8 @@ export default class BttnBox extends Component {
             activeColor != this.props.activeColor ||
             activeSize != this.props.activeSize ||
             codeBackground != this.props.codeBackground ||
+            block != this.props.block ||
+            outline != this.props.outline ||
             i != this.props.i;
     }
 
@@ -44,7 +46,7 @@ export default class BttnBox extends Component {
         })
     }
 
-    render({bttn, i, color, background, size, activeColor, activeSize, codeBackground}, {textCopied}) {
+    render({bttn, i, color, background, size, activeColor, activeSize, codeBackground, block, outline}, {textCopied}) {
         return (
             <div class="box-animate animated fadeInUp"
                  style={{
@@ -68,8 +70,13 @@ export default class BttnBox extends Component {
                     </div>
                     <hr/>
                     <div class="button-wrapper animated fadeIn">
-                        <button class={"bttn-" + bttn.name + " bttn-" + size + " bttn-" + activeColor}
-                                dangerouslySetInnerHTML={{__html: bttn.texts[activeSize]}}>
+                        <button class={{
+                            ["bttn-" + bttn.name]: true,
+                            ["bttn-" + size]: true,
+                            ["bttn-" + activeColor]: true,
+                            "bttn-block": block,
+                            "bttn-remove-outline": !outline
+                        }} dangerouslySetInnerHTML={{__html: bttn.texts[activeSize]}}>
                         </button>
                     </div>
                     <div class="classname"

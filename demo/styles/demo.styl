@@ -132,7 +132,7 @@ body
     width: 100%
     text-align center
     &.padding-top
-      padding-top 45px
+      padding-top 85px
     .box-animate, .box
       width 250px
       height 250px
@@ -241,7 +241,7 @@ body
     position relative;
     z-index: 10
     margin-bottom -15px
-    height 60px
+    height 100px
     transition box-shadow 0.3s anim_func
     &.fixed
       position fixed
@@ -249,7 +249,7 @@ body
       width: 100%;
       background cClean;
       box-shadow: 0 20px 20px rgba(0, 0, 0, 0.08);
-      .options-chooser-container
+      .options-chooser-container-small
         border-bottom 0
     .options-chooser-container
       overflow hidden;
@@ -266,6 +266,10 @@ body
         flex: 1;
         &.right
           text-align right
+      &.options-chooser-container-small
+        height 40px
+        .half
+          padding: 10px;
       .colors
         .color-round
           display: inline-block;
@@ -321,6 +325,71 @@ body
             height: 3px;
             transition transform 0.3s anim_func
 
+.options-checkbox-container
+  margin-left 10px
+  display inline-block
+  vertical-align top
+  cursor pointer
+  .options-checkbox
+    display: none;
+    // add default box-sizing for this scope
+    &,
+    &:after,
+    &:before,
+    & *,
+    & *:after,
+    & *:before,
+    & + .options-checkbox-btn
+      box-sizing: border-box;
+      &::selection
+        background: none;
+    + .options-checkbox-btn
+      outline: 0;
+      display: inline-block;
+      vertical-align bottom
+      width: 40px;
+      height: 20px;
+      position: relative;
+      cursor: pointer;
+      user-select: none;
+      &:after,
+      &:before
+        position: relative;
+        display: block;
+        content: "";
+        width: 50%;
+        height: 100%;
+      &:after
+        left: 0;
+      &:before
+        display: none;
+    &:checked + .options-checkbox-btn:after
+      left: 50%;
+  .options-checkbox-flat
+    + .options-checkbox-btn
+      padding: 2px;
+      transition: all .2s anim_func;
+      background: cWhite;
+      border: 2px solid cLightGrey;
+      border-radius: 2em;
+      &:after
+        transition: all .2s anim_func;
+        background: cLightGrey;
+        content: "";
+        border-radius: 10px;
+    &:checked + .options-checkbox-btn
+      border: 2px solid cGreen;
+      &:after
+        left: 50%;
+        background: cGreen;
+  .options-checkbox-btn-label
+    font-weight 700
+    color cLightGrey
+    padding-left 4px
+    transition color 0.2s anim_func
+    &.active
+      color cGreen
+
 @media screen and (max-width: 869px)
   .bttn-logo-box
     .bttn-jelly
@@ -341,6 +410,8 @@ body
         width: 100% !important;
         height: 50% !important;
         text-align: center !important;
+      .options-chooser-container-small
+        display none
     &.fixed
       left: 0;
       height: 120px;

@@ -1,20 +1,23 @@
 import {h, Component} from 'preact';
 
 export default class Options extends Component {
-    shouldComponentUpdate({colors, sizes, fixed, setColor, setSize, activeColor, activeSize}) {
+    shouldComponentUpdate({colors, sizes, fixed, setColor, setSize, activeColor, activeSize, blockButton, buttonOutline, setOptions}) {
         return colors != this.props.colors ||
             sizes != this.props.sizes ||
             fixed != this.props.fixed ||
             setColor != this.props.setColor ||
             activeColor != this.props.activeColor ||
             activeSize != this.props.activeSize ||
-            setSize != this.props.setSize;
+            setSize != this.props.setSize ||
+            setOptions != this.props.setOptions ||
+            blockButton != this.props.blockButton ||
+            buttonOutline != this.props.buttonOutline;
     }
 
-    render({colors, sizes, fixed, setColor, setSize, activeColor, activeSize}) {
+    render({colors, sizes, fixed, setColor, setSize, activeColor, activeSize, blockButton, buttonOutline, setOptions}) {
         let activeSizeIndex = Object.keys(sizes).findIndex((size) => size === activeSize);
         let activeColorIndex = Object.keys(colors).find((color) => color === activeColor);
-
+console.log(blockButton, buttonOutline)
         return (
             <div class={{"options-chooser animated fadeInUp": true, "fixed": fixed}}>
                 <div className="options-chooser-container">
@@ -56,7 +59,33 @@ export default class Options extends Component {
                                 background: activeColorIndex !== 'default' ? colors[activeColorIndex] : '#777777'
                             }}></div>
                         </div>
-
+                    </div>
+                </div>
+                <div className="options-chooser-container options-chooser-container-small hidden-xs">
+                    <div className="half sizes left"></div>
+                    <div className="half sizes right">
+                        <div class="options-checkbox-container animated fadeInUp hint--left hint--rounded hint--bounce"
+                             data-hint="Full width buttons"
+                             onClick={()=>setOptions('blockButton', !blockButton)}
+                             style={{'animation-delay': '1s'}}>
+                            <input class="options-checkbox options-checkbox-flat"
+                                   checked={blockButton}
+                                   id="block-indicator"
+                                   type="checkbox"/>
+                            <label class="options-checkbox-btn" for="block-indicator"/>
+                            <span class={{"options-checkbox-btn-label": true, "active": blockButton}}>Block Buttons</span>
+                        </div>
+                        <div class="options-checkbox-container animated fadeInUp hint--left hint--rounded hint--bounce"
+                             data-hint="Show outline when navigating with keyboard, Disable: `bttn-remove-outline`"
+                             onClick={()=>setOptions('buttonOutline', !buttonOutline)}
+                             style={{'animation-delay': '1.1s'}}>
+                            <input class="options-checkbox options-checkbox-flat"
+                                   checked={buttonOutline}
+                                   id="disable-outline"
+                                   type="checkbox"/>
+                            <label class="options-checkbox-btn" for="disable-outline"/>
+                            <span class={{"options-checkbox-btn-label": true, "active": buttonOutline}}>Outline(Accessibility)</span>
+                        </div>
                     </div>
                 </div>
             </div>

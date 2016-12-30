@@ -2,7 +2,7 @@
 /*!
  *
  * bttn.css - https://ganapativs.github.io/bttn.css
- * Version - 0.2.1
+ * Version - 0.2.2
  * Demo: https://bttn.surge.sh
  *
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -40,7 +40,6 @@
 .bttn-xs {
   margin: 0;
   padding: 0;
-  outline: none;
   border-width: 0;
   border-color: transparent;
   background: transparent;
@@ -73,7 +72,6 @@
 .bttn-gradient {
   margin: 0;
   padding: 0;
-  outline: none;
   border-width: 0;
   border-color: transparent;
   background: transparent;
@@ -148,7 +146,6 @@
 .bttn-bordered {
   margin: 0;
   padding: 0;
-  outline: none;
   border-width: 0;
   border-color: transparent;
   background: transparent;
@@ -293,7 +290,6 @@
 .bttn-minimal {
   margin: 0;
   padding: 0;
-  outline: none;
   border-width: 0;
   border-color: transparent;
   background: transparent;
@@ -396,7 +392,6 @@
 .bttn-stretch {
   margin: 0;
   padding: 0;
-  outline: none;
   border-width: 0;
   border-color: transparent;
   background: transparent;
@@ -499,7 +494,6 @@
 .bttn-jelly {
   margin: 0;
   padding: 0;
-  outline: none;
   border-width: 0;
   border-color: transparent;
   background: transparent;
@@ -534,7 +528,6 @@
 }
 .bttn-jelly:hover,
 .bttn-jelly:focus {
-  outline: none;
   box-shadow: 0 1px 8px rgba(58,51,53,0.4);
   -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -612,7 +605,6 @@
 .bttn-fill {
   margin: 0;
   padding: 0;
-  outline: none;
   border-width: 0;
   border-color: transparent;
   background: transparent;
@@ -648,7 +640,6 @@
 }
 .bttn-fill:hover,
 .bttn-fill:focus {
-  outline: none;
   box-shadow: 0 1px 8px rgba(58,51,53,0.3);
   color: #fff;
   -webkit-transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -769,7 +760,6 @@
 .bttn-material-circle {
   margin: 0;
   padding: 0;
-  outline: none;
   border-width: 0;
   border-color: transparent;
   background: transparent;
@@ -855,7 +845,6 @@
 .bttn-material-flat {
   margin: 0;
   padding: 0;
-  outline: none;
   border-width: 0;
   border-color: transparent;
   background: transparent;
@@ -930,7 +919,6 @@
 .bttn-pill {
   margin: 0;
   padding: 0;
-  outline: none;
   border-width: 0;
   border-color: transparent;
   background: transparent;
@@ -970,7 +958,6 @@
 }
 .bttn-pill:hover,
 .bttn-pill:focus {
-  outline: none;
   box-shadow: 0 1px 8px rgba(58,51,53,0.3);
   color: #fff;
   -webkit-transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -1109,7 +1096,6 @@
 .bttn-float {
   margin: 0;
   padding: 0;
-  outline: none;
   border-width: 0;
   border-color: transparent;
   background: transparent;
@@ -1211,7 +1197,6 @@
 .bttn-unite {
   margin: 0;
   padding: 0;
-  outline: none;
   border-width: 0;
   border-color: transparent;
   background: transparent;
@@ -1266,7 +1251,6 @@
 }
 .bttn-unite:hover,
 .bttn-unite:focus {
-  outline: none;
   box-shadow: 0 1px 8px rgba(58,51,53,0.3);
   color: #1d89ff;
   -webkit-transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -1421,7 +1405,6 @@
 .bttn-slant {
   margin: 0;
   padding: 0;
-  outline: none;
   border-width: 0;
   border-color: transparent;
   background: transparent;
@@ -1586,4 +1569,12 @@
 .bttn-block {
   display: block;
   width: 100%;
+}
+.bttn-remove-outline {
+  outline: none;
+}
+.bttn-remove-outline:hover,
+.bttn-remove-outline:focus,
+.bttn-remove-outline:active {
+  outline: none;
 }
