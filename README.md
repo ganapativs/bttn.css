@@ -1,8 +1,7 @@
 # bttn.css
 Awesome buttons for awesome projects!
 
-###[Demo](https://bttn.surge.sh/)
-####[Medium Article](https://medium.com/@ganapativs/bttn-css-awesome-buttons-for-awesome-projects-baa2486bcb3d)
+###[Demo](https://bttn.surge.sh/) | [Medium Article](https://medium.com/@ganapativs/bttn-css-awesome-buttons-for-awesome-projects-baa2486bcb3d)
 
 <img src="http://imgur.com/mqPa6Ac.png" width="600" />
 
