@@ -448,17 +448,16 @@ body
       animation slide-to-left 0.3s 1.2s anim_func forwards
     .product-hunt-featured
       position: absolute;
-      right: 0;
+      right: 20%;
       height: 100%;
       top: 0;
-      width: 45%;
-      text-align: left;
-      padding-left: 10%;
+      width: 25%;
+      text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
       h3
-        color cWhite
+        color #da5630
         animation-delay 1.8s
         margin-top: -10px;
         animation-duration 0.8s
@@ -469,21 +468,21 @@ body
         animation-duration 0.8s
       span
         transition transform 0.2s 0.2s anim_func
-        display: inline-table;
       span
         &:hover
-          transform scale(1.2)
+          transform scale(1.1)
           transition transform 0.2s anim_func
       &:before
         content ''
         position: absolute;
-        background: #607D8B;
-        width: 0%;
-        height: 100%;
-        left: 30%;
+        background: transparent;
+        width: 0;
+        height: 110%;
+        left: 50%;
+        top: -5%;
         transform: skewX(-10deg);
         z-index: -1;
-        box-shadow: inset 20px 0 50px rgba(0,0,0,0.6), inset -10px 0 20px rgba(0,0,0,0.3);
+        box-shadow: inset 20px 0 50px #ecebd6, inset -10px 0 20px #ecebd6;
         animation expand-from-left 0.3s 1.5s anim_func forwards
 
   @keyframes slide-to-left {
@@ -498,21 +497,10 @@ body
   @keyframes expand-from-left {
     from {
       width: 0
-      left: 30%;
+      left: 50%;
     }
     to {
-      width: 60%;
+      width: 100%;
       left: 0
-    }
-  }
-
-  @keyframes scale-to-top {
-    from {
-      height 0
-      top: 50%;
-    }
-    to {
-      height 90%
-      top: 5%;
     }
   }

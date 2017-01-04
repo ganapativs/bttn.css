@@ -17,7 +17,6 @@ export default class Options extends Component {
     render({colors, sizes, fixed, setColor, setSize, activeColor, activeSize, blockButton, buttonOutline, setOptions}) {
         let activeSizeIndex = Object.keys(sizes).findIndex((size) => size === activeSize);
         let activeColorIndex = Object.keys(colors).find((color) => color === activeColor);
-console.log(blockButton, buttonOutline)
         return (
             <div class={{"options-chooser animated fadeInUp": true, "fixed": fixed}}>
                 <div className="options-chooser-container">

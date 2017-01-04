@@ -69,28 +69,25 @@ export default [
         displayName: 'Material - flat',
         texts: defaultText
     },
-    // Beta buttons
     {
         name: 'pill',
         className: 'bttn-pill',
         displayName: 'Pill',
-        isBeta: true,
         texts: defaultText
     },
     {
         name: 'float',
         className: 'bttn-float',
         displayName: 'Float',
-        isBeta: true,
         texts: defaultText
     },
     {
         name: 'unite',
         className: 'bttn-unite',
         displayName: 'Unite',
-        isBeta: true,
         texts: defaultText
     },
+    // Beta buttons
     {
         name: 'slant',
         className: 'bttn-slant',
