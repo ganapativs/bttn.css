@@ -39,7 +39,7 @@ Awesome buttons for awesome projects!
 - `bttn-no-outline` (Don't show outline when navigating with keyboard/interact using mouse or touch)
 
 #### Usage
-Include 'dist/bttn.min.css' in head of your html file and start using class in your button.
+Include `dist/bttn.min.css` in head of your html file and start using class in your button.
 <pre>
 &lt;button class="bttn-material-circle bttn-md"&gt;
   &lt;i class="icon-menu"&gt;&lt;/i&gt;
