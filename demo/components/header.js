@@ -40,9 +40,9 @@ export default class Header extends Component {
                                     <button class="bttn-gradient bttn-md bttn-warning bttn-no-outline">
                                         Download
                                         <small class="hidden-xs">
-                                        	<strong style="vertical-align: middle;font-size: 10px;">
-                                        		&nbsp;(4kb gzip)
-                                        	</strong>
+                                            <strong style="vertical-align: middle;font-size: 10px;">
+                                                &nbsp;(4kb gzip)
+                                            </strong>
                                         </small>
                                     </button>
                                 </a>
@@ -67,6 +67,14 @@ export default class Header extends Component {
                             </div>
                         </div>
                     </div>
+                    <a href="https://www.producthunt.com/posts/bttn-css" target="_blank">
+                        <div className="product-hunt-featured">
+                            <h3 class="animated fadeInUp">Featured on</h3>
+                            <span>
+                                <img class="animated fadeInUp" src="http://i.imgur.com/BPK4eNA.png"/>
+                            </span>
+                        </div>
+                    </a>
                 </div>
             </div>
         );

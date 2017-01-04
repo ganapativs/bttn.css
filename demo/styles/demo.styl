@@ -440,3 +440,79 @@ body
       .code-copy
         display none
 
+
+// Producthunt stuffs
+@media screen and (min-width: 870px)
+  .bttn-logo-box
+    .box
+      animation slide-to-left 0.3s 1.2s anim_func forwards
+    .product-hunt-featured
+      position: absolute;
+      right: 0;
+      height: 100%;
+      top: 0;
+      width: 45%;
+      text-align: left;
+      padding-left: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h3
+        color cWhite
+        animation-delay 1.8s
+        margin-top: -10px;
+        animation-duration 0.8s
+      img
+        width 100px
+        margin-left 5px
+        animation-delay 1.8s
+        animation-duration 0.8s
+      span
+        transition transform 0.2s 0.2s anim_func
+        display: inline-table;
+      span
+        &:hover
+          transform scale(1.2)
+          transition transform 0.2s anim_func
+      &:before
+        content ''
+        position: absolute;
+        background: #607D8B;
+        width: 0%;
+        height: 100%;
+        left: 30%;
+        transform: skewX(-10deg);
+        z-index: -1;
+        box-shadow: inset 20px 0 50px rgba(0,0,0,0.6), inset -10px 0 20px rgba(0,0,0,0.3);
+        animation expand-from-left 0.3s 1.5s anim_func forwards
+
+  @keyframes slide-to-left {
+    from {
+      transform translateX(0)
+    }
+    to {
+      transform translateX(-150px)
+    }
+  }
+
+  @keyframes expand-from-left {
+    from {
+      width: 0
+      left: 30%;
+    }
+    to {
+      width: 60%;
+      left: 0
+    }
+  }
+
+  @keyframes scale-to-top {
+    from {
+      height 0
+      top: 50%;
+    }
+    to {
+      height 90%
+      top: 5%;
+    }
+  }
