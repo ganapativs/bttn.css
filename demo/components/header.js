@@ -71,7 +71,7 @@ export default class Header extends Component {
                         <div className="product-hunt-featured">
                             <h3 class="animated fadeInUp">Featured on</h3>
                             <span className="hint--bottom hint--bounce hint--rounded" data-hint="Product Hunt">
-                                <img class="animated fadeInUp" src="http://i.imgur.com/BPK4eNA.png"/>
+                                <img class="animated fadeInUp" src="https://i.imgur.com/BPK4eNA.png"/>
                             </span>
                         </div>
                     </a>
