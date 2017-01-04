@@ -28,9 +28,9 @@ export default class Header extends Component {
             <div class="row center-xs bttn-logo-box" id="logo-box">
                 <div class="col-xs-12">
                     <div class="box">
-                        <button class={{"bttn-jelly": true, "active": animateLogo, "bttn-no-outline": true}}>
+                        <div class={{"bttn-jelly": true, "active": animateLogo, "bttn-no-outline": true}} style={{display: 'inline-block'}}>
                             bttn.css
-                        </button>
+                        </div>
                         <h4 class="col-xs-12 animated fadeInUp">Awesome buttons for awesome projects!</h4>
                         <div class="row col-xs-12 col-sm-8 col-md-6 col-lg-6 col-md-offset-3
                                     col-lg-offset-3 col-sm-offset-2 col-xs-offset-0 around-xs download-options">
