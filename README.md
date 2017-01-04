@@ -18,7 +18,7 @@ Awesome buttons for awesome projects!
 - `bttn-pill`
 - `bttn-float`
 - `bttn-unite`
-- `bttn-slant`
+- `bttn-slant` *(Beta)*
 
 #### Button sizes
 - `bttn-xs`
