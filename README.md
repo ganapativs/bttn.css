@@ -46,6 +46,9 @@ Include `bttn.min.css` from `dist` folder or download `bttn.min.css` from [cdnjs
 &lt;/button&gt;
 </pre>
 
+### Mentions
+ - [Tutorialzine](http://tutorialzine.com/2017/01/15-interesting-javascript-and-css-libraries-for-january-2017/)
+ - [Dr.Web](https://www.drweb.de/magazin/css-huebsche-buttons-mit-bttn-css/)
 
 ### Environment Setup
 
