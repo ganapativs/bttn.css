@@ -38,8 +38,25 @@ Awesome buttons for awesome projects!
 - `bttn-block`
 - `bttn-no-outline` (Don't show outline when navigating with keyboard/interact using mouse or touch)
 
-#### Usage
-Include `bttn.min.css` from `dist` folder or download `bttn.min.css` from [cdnjs](https://cdnjs.com/libraries/bttn.css) and add it to head of your html file and start using CSS classes to your button.
+### Install
+
+#### Bower
+<pre>
+bower install bttn.css
+</pre>
+
+#### CDN - [cdnjs](https://cdnjs.com/libraries/bttn.css)
+<pre>
+https://cdnjs.com/libraries/bttn.css
+</pre>
+
+#### CSS File
+<pre>
+&lt;link type="text/css" src="./dist/bttn.min.css"/&gt;
+</pre>
+
+### Usage
+Include `bttn.min.css` in head of your html file and start using bttn CSS classes in your button.
 <pre>
 &lt;button class="bttn-material-circle bttn-md"&gt;
   &lt;i class="icon-menu"&gt;&lt;/i&gt;
