@@ -68,32 +68,32 @@ Include `bttn.min.css` in head of your html file and start using bttn CSS classe
 > :information_source: Build process uses [yarn](https://yarnpkg.com), you can also use npm instead.
 
 
-####Install dependencies - stylus, autoprefixer-stylus and clean-css
+#### Install dependencies - stylus, autoprefixer-stylus and clean-css
 <pre>
 yarn
 </pre>
 
-####Compile stylus to css
+#### Compile stylus to css
 <pre>
 yarn start
 </pre>
 
-####Dev environment
+#### Dev environment
 <pre>
 yarn run dev
 </pre>
 
-####Minify css for production and build example folder javascript files(Webpack)
+#### Minify css for production and build example folder javascript files(Webpack)
 <pre>
 yarn run build
 </pre>
 
-####View bttn.css demo in browser
+#### View bttn.css demo in browser
 <pre>
 open build/index.html in browser
 </pre>
 
-##TODO
+## TODO
 - Add loading & done state animations
 - Test on older version of the browsers
 
